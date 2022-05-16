@@ -1,9 +1,22 @@
 {{ define "main" }}
 
   <div class="posts">
-    {{ range .Paginator.Pages }}
-      {{ partial "post" . }}
+
+    {{ if .IsHome }}
+
+      {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+      {{ range $pages }}
+        {{ partial "post" . }}
+      {{ end }}
+
+    {{ else }}
+
+      {{ range .Paginator.Pages }}
+        {{ partial "post" . }}
+      {{ end }}
+
     {{ end }}
+
   </div>
 
   {{ template "_internal/pagination.html" . }}
