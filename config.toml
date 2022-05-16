@@ -2,6 +2,7 @@ baseURL = 'http://rogemus.github.io/'
 languageCode = 'pl-pl'
 title = 'Rogemus'
 theme = "rogtheme"
+description = ""
 
 [params]
   mainSections = ["posts"]
