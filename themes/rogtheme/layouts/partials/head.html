@@ -3,7 +3,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <title>{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ site.Title }}</title>
 
-<!-- Meta -->
 {{ if eq .Kind "page" }}
 <meta name="description" content="{{ .Description }}" />
 <meta name="author" content="{{ .Params.Author | default site.Author.name }}" />
@@ -20,3 +19,21 @@
 {{ $main_css := resources.Get "main.css" }}
 {{ $css := slice $main_css | resources.Concat "main.css" | minify }}
 <link rel="stylesheet" href="{{ $css.Permalink }}" >
+
+<!-- Social -->
+<!-- Twitter -->
+{{ if site.Params.social.twitter }}
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@{{ site.Params.social.twitter }}" />
+    <meta name="twitter:creator" content="@{{ site.Params.social.twitter }}" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="{{ .Title }}" />
+
+    {{ if eq .Kind "page" }}
+        <meta property="og:title" content="{{ .Title }}" />
+        <meta property="og:description" content="{{ .Description }}" />
+    {{ else }}
+        <meta property="og:title" content="{{ site.Title }}" />
+        <meta property="og:description" content="{{ site.Params.description }}" />
+    {{ end }}
+{{ end }}
