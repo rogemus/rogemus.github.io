@@ -2,11 +2,13 @@ baseURL = 'https://rogemus.github.io/'
 languageCode = 'pl-pl'
 title = "Rogemus"
 theme = "rogtheme"
-description = "This is my awesome blog"
+
 enableRobotsTXT = true
 
 [params]
   mainSections = ["posts"]
+  description = "This is my awesome blog"
+  author = 'Kacper "Rogemus" Rogowski'
 
   [params.social]
     twitter = "rogemus"

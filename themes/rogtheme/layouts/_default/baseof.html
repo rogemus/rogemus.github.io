@@ -2,11 +2,11 @@
 <html lang="pl">
 
 <head>
-    {{ partialCached "head.html" . }}
+    {{ partial "head.html" . }}
 </head>
 
 <body>
-    {{ partialCached "header.html" . }}
+    {{ partial "header.html" . }}
 
     <div class="banner">
         {{ block "banner" . }}{{ end }}

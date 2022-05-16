@@ -1,14 +1,14 @@
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<title>{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
+<title>{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ site.Title }}</title>
 
 {{ if not .IsHome }}
     <meta name="description" content="{{ .Description }}" />
-    <meta name="author" content="{{ .Params.Author | default .Site.Author.name }}" />
+    <meta name="author" content="{{ .Params.Author | default site.Author.name }}" />
 {{ else }}
-    <meta name="description" content="{{ .Site.Params.description }}" />
-    <meta name="author" content="{{ .Site.Author.name }}" />
+    <meta name="description" content="{{ site.Params.description }}" />
+    <meta name="author" content="{{ site.Author.name }}" />
 {{ end }}
 
 {{ range .AlternativeOutputFormats }}
