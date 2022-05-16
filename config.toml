@@ -3,6 +3,7 @@ languageCode = 'pl-pl'
 title = 'Rogemus'
 theme = "rogtheme"
 description = ""
+enableRobotsTXT = true
 
 [params]
   mainSections = ["posts"]
