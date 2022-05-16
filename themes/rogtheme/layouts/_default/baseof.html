@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    {{ partialCached "head.html" . }}
+</head>
+
+<body>
+    {{ partialCached "header.html" . }}
+
+    <div class="banner">
+        {{ block "banner" . }}{{ end }}
+    </div>
+
+    <main class="content">
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    {{ partialCached "footer.html" . }}
+</body>
+
+</html>
