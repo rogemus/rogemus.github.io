@@ -1,0 +1,52 @@
+{{ define "banner" }}
+  {{ if .Params.feature_img }}
+    {{ $img := .Resources.GetMatch (printf "**%s" .Params.feature_img) }}
+    {{ $img := $img.Fit "800x800" }}
+    {{ $img := $img.Crop "800x500" }}
+
+    <div class="post-thumbnail">
+      <a href="{{ .Permalink }}" title="{{ .Title }}" class="post-thumbnail-link">
+        <img
+          loading="lazy"
+          class="post-thumbnail-img"
+          src="{{ $img.RelPermalink }}"
+          alt="{{ .Params.feature_img_caption }}"
+        >
+      </a>
+    </div>
+  {{end }}
+{{ end }}
+
+{{ define "main" }}
+    {{ if .Params.feature_img }}
+      <div class="post single">
+    {{ else }}
+      <div class="post">
+    {{ end }}
+
+    <h1 class="post-title">
+      {{ .Title }}
+    </h1>
+
+    <time class="post-date">
+      {{ .PublishDate.Format "01.02.2006" }}
+    </time>
+
+    <div class="post-content">
+      {{ .Content }}
+    </div>
+
+    {{ if .Params.tags }}
+      <ul class="tags">
+        {{ range .Params.tags }} {{ $href := print (absURL "tags/") (urlize .) }}
+        <li class="tags-tag">
+          <a href="{{ $href }}" class="tags-tag-link">{{ . }}</a>
+        </li>
+        {{ end }}
+      </ul>
+    {{ end }}
+
+    {{ partial "related" . }}
+
+  </div>
+{{ end }}

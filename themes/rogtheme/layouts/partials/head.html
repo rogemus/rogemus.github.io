@@ -1,0 +1,22 @@
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<title>{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ site.Title }}</title>
+
+<!-- Meta -->
+{{ if eq .Kind "page" }}
+<meta name="description" content="{{ .Description }}" />
+<meta name="author" content="{{ .Params.Author | default site.Author.name }}" />
+{{ else }}
+<meta name="description" content="{{ site.Params.description }}" />
+<meta name="author" content="{{ site.Author.name }}" />
+{{ end }}
+
+{{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
+
+
+{{ $main_css := resources.Get "main.css" }}
+{{ $css := slice $main_css | resources.Concat "main.css" | minify }}
+<link rel="preload stylesheet" as="style" href="{{ $css.Permalink }}" />

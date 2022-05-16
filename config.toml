@@ -1,0 +1,24 @@
+baseURL = 'http://rogemus.com/'
+languageCode = 'pl-pl'
+title = 'Rogemus'
+theme = "rogtheme"
+
+[params]
+  mainSections = ["posts"]
+
+  [params.social]
+    twitter = "rogemus"
+    twitch = "rogemus"
+    facebook = ""
+
+[menu]
+  [[menu.main]]
+    identifier = "o-mnie"
+    name = "O Mnie"
+    url = "/pages/o-mnie/"
+    weight= 5
+  [[menu.main]]
+    identifier = "absurdy"
+    name = "Absurdy"
+    url = "/categories/absurdy/"
+    weight= 10
