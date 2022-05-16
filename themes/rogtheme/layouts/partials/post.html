@@ -22,8 +22,8 @@
   </h2>
 
   <div class="post-meta">
-    <time class="post-date">
-      {{ .PublishDate.Format "01.02.2006" }}
+    <time datetime="{{ .PublishDate.Format "2006-01-02" }}" class="post-date">
+      {{ .PublishDate.Format "2006-01-02" }}
     </time>
   </div>
 
