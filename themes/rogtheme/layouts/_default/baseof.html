@@ -8,6 +8,10 @@
 <body>
     {{ partial "header.html" . }}
 
+    {{ if .IsHome }}
+        <h1 class="hidden">{{ .Site.Title }}</h1>
+    {{ end }}
+
     <div class="banner">
         {{ block "banner" . }}{{ end }}
     </div>
