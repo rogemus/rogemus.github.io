@@ -1,4 +1,4 @@
-baseURL = 'http://rogemus.github.io/'
+baseURL = 'https://rogemus.github.io/'
 languageCode = 'pl-pl'
 title = 'Rogemus'
 theme = "rogtheme"
