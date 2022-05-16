@@ -1,8 +1,8 @@
 baseURL = 'https://rogemus.github.io/'
 languageCode = 'pl-pl'
-title = 'Rogemus'
+title = "Rogemus"
 theme = "rogtheme"
-description = ""
+description = "This is my awesome blog"
 enableRobotsTXT = true
 
 [params]
@@ -17,7 +17,7 @@ enableRobotsTXT = true
   [[menu.main]]
     identifier = "o-mnie"
     name = "O Mnie"
-    url = "/pages/o-mnie/"
+    url = "/o-mnie/"
     weight= 5
   [[menu.main]]
     identifier = "absurdy"
