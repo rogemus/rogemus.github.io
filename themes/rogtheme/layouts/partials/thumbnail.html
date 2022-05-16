@@ -1,0 +1,16 @@
+{{ if .Params.feature_img }}
+    {{ $img := .Resources.GetMatch (printf "**%s" .Params.feature_img) }}
+    {{ $img := $img.Fit "800x800" }}
+    {{ $img := $img.Crop "800x300" }}
+
+    <div class="post-thumbnail">
+      <a href="{{ .Permalink }}" title="{{ .Title }}" class="post-thumbnail-link">
+        <img
+          loading="lazy"
+          class="post-thumbnail-img"
+          src="{{ $img.RelPermalink }}"
+          alt="{{ .Params.feature_img_caption }}"
+        >
+      </a>
+    </div>
+{{ end }}

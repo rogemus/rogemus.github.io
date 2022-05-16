@@ -27,5 +27,5 @@ enableRobotsTXT = true
   [[menu.main]]
     identifier = "absurdy"
     name = "Absurdy"
-    url = "/categories/absurdy/"
+    url = "/categories/absurdy"
     weight= 10

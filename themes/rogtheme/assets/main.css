@@ -6,6 +6,7 @@
   --greyLight: #F3F3F3;
   --grey: #E3E3E3;
   --greyDark: #6A6A6A;
+  --greyVeryDark: #333333;
   --oragne: #F86944;
   --black: #161616;
 
@@ -425,10 +426,42 @@ iframe {
   font-size: 1.5rem;
 }
 
+/* .posts post */
+/* .posts .post-thumbnail {
+  margin-bottom: var(--spacing-s);
+}
+
+.posts .post-thumbnail, 
+.posts .post-thumbnail img {
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+.posts .post-content,
+.posts .post-date,
+.posts .post-description,
+.posts .post-title {
+  padding: var(--spacing-m);
+} */
+
 /* post */
+.post-content {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .post {
   margin-bottom: var(--spacing-l);
+  position: relative;
 }
+
+/* .post::after {
+  content: '';
+  height: 1px;
+  background: var(--grey);
+  width: 100%;
+  bottom: -30px;
+  left: 0;
+  position: absolute;
+} */
 
 .post-title {
   margin: 0;
@@ -442,6 +475,7 @@ iframe {
 
 .post-description {
   padding: var(--spacing-s) 0;
+  color: var(--greyVeryDark);
 }
 
 .post-thumbnail {
@@ -469,6 +503,10 @@ iframe {
   background: var(--white);
   position: relative;
   padding: var(--spacing-m);
+}
+
+.post.single > * {
+  color: var(--greyVeryDark);
 }
 
 @media (max-width: 600px) {
