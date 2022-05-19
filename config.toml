@@ -15,8 +15,12 @@ enableRobotsTXT = true
 
   [params.social]
     twitter = "rogemus"
+    twitter_enable = true
     twitch = "rogemus"
+    twitch_eneble = false
     facebook = ""
+    facebook_enable = false
+    rss_enable = true
 
 [menu]
   [[menu.main]]
@@ -25,7 +29,13 @@ enableRobotsTXT = true
     url = "/o-mnie/"
     weight= 5
   [[menu.main]]
-    identifier = "absurdy"
-    name = "Absurdy"
-    url = "/categories/absurdy"
+    identifier = "felietony"
+    name = "Felietony"
+    url = "/categories/felietony"
     weight= 10
+
+  [[menu.footer]]
+    identifier = "polityka-prywatnosci"
+    name = "Polityka Prywatności"
+    url = "/polityka-prywatnosci"
+    weight = 10
