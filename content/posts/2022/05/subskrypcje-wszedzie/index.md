@@ -20,8 +20,7 @@ feature_img_caption: ""
 ---
 Subskrypcje są nieodłączną częścią naszego codziennego życia. Opłacamy ich często więcej niż chcemy się do tego przyznać, albo co gorsza więcej niż pamiętamy, że opłacamy. 
 
-Ale czym tak na prawdę jest subskrypcja? Gdy zapyta się Słownik PWN to mimo niezwykłej wylewności, bo zaledwie 144 znaków, dostajemy całe niezbędne mięso by zrozumieć to zagadniecie. 
-
+Ale czym tak na prawdę jest subskrypcja? Gdy zapyta się Słownik PWN to mimo niezwykłej wylewności, bo zaledwie 144 znaków, dostajemy całe niezbędne mięso by zrozumieć to zagadniecie.
 
 > subskrypcja - pisemne zobowiązanie się do wykupienia książki albo do nabycia akcji, obligacji lub innych papierów wartościowych, połączone często z przedpłatą
 

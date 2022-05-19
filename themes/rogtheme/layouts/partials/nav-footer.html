@@ -1,0 +1,20 @@
+<nav class="nav-footer">
+  <ul class="nav-footer-list">
+    <li class="nav-footer-list-item">
+      <a href="{{ site.BaseURL }}/sitemap.xml" title="Sitemap" class="nav-footer-list-item-link">
+        Sitemap
+      </a>
+    </li>
+
+    {{ with site.Menus.footer }}
+      {{ range . }}
+        <li class="nav-footer-list-item">
+          <a href="{{ .URL }}" title="{{ .Name }}" class="nav-footer-list-item-link">
+            {{ .Name }}
+          </a>
+        </li>
+      {{ end }}
+    {{ end }}
+
+  </ul>
+</nav>
