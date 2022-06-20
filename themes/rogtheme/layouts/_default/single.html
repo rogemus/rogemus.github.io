@@ -1,7 +1,7 @@
 {{ define "banner" }}
   {{ if .Params.feature_img }}
     {{ $img := .Resources.GetMatch (printf "**%s" .Params.feature_img) }}
-    {{ $img := $img.Fill "800x500" }}
+    {{ $img := $img.Fill "1000x500" }}
 
     <div class="post-thumbnail">
       <a href="{{ .Permalink }}" title="{{ .Title }}" class="post-thumbnail-link">
