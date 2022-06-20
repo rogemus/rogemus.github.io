@@ -4,6 +4,7 @@ title = "Rogemus - Felietony o grach i absurdach"
 theme = "rogtheme"
 enableRobotsTXT = true
 disqusShortname = "rogemus"
+googleAnalytics = "G-23WEL3MJTZ"
 
 [taxonomies]
   series = 'series'
