@@ -2,26 +2,25 @@
 author: 'Kacper "Rogemus" Rogowski'
 title: "Subskrypcje wszędzie i na wszystko"
 date: "2022-05-13"
-description: "Lorem Ipsum Dolor Si Amet"
+description: "Subskrypcje są nieodłączną częścią naszego codziennego życia. Opłacamy ich często więcej niż chcemy się do tego przyznać, albo co gorsza więcej niż pamiętamy, że opłacamy. Czy każdą dziedzinę życia można pokryć subskrypcją? A jeśli tak, to czy powinniśmy?"
 aliases: ["subskrypcje-wszedzie-i-na-wszystko"]
 tags: [
-    "netflix",
-    "subskrypcje",
-    "playstation plus",
-    "xbox live",
-    "game pass"
+  "netflix",
+  "subskrypcje",
+  "playstation plus",
+  "xbox live",
+  "game pass"
 ]
 categories: [
   "absurdy",
+  "felieton",
 ]
-draft: true
 feature_img: "featured.jpeg"
-feature_img_caption: ""
+feature_img_caption: "Subskrypcje wszędzie i na wszystko"
 ---
-Subskrypcje są nieodłączną częścią naszego codziennego życia. Opłacamy ich często więcej niż chcemy się do tego przyznać, albo co gorsza więcej niż pamiętamy, że opłacamy. 
+Subskrypcje są nieodłączną częścią naszego codziennego życia. Opłacamy ich często więcej niż chcemy się do tego przyznać, albo co gorsza więcej niż pamiętamy, że opłacamy.
 
 Ale czym tak na prawdę jest subskrypcja? Gdy zapyta się Słownik PWN to mimo niezwykłej wylewności, bo zaledwie 144 znaków, dostajemy całe niezbędne mięso, by zrozumieć to zagadniecie. 
-
 
 > subskrypcja - pisemne zobowiązanie się do wykupienia książki albo do nabycia akcji, obligacji lub innych papierów wartościowych, połączone często z przedpłatą
 
@@ -38,6 +37,7 @@ Obecnie chyba każda nasza potrzeba zostanie zrealizowana przez jakiś portal, k
 I takich przykładów jest wuchta. Mam nadzieje, że rozumiecie o co mi chodzi; jest tego dużo i ciągle tego przybywa.
 
 ## Branża filmowa
+
 Ale to co mnie osobiście psychicznie i czasem też fizycznie boli to jest fakt, że firmy zaczęły przesadzać z tym wciskaniem tego modelu płatności do każdej możliwej usługi. Netflix miał być rycerzem w złotych kaloszach, który uwolni nas od jarzma standardowej nudnej, pełnej reklam telewizji. Bez wątpienia tak było na początku. Wchodziło się na portal i cyfrowe półki były zapełnione po brzegi filmami oraz serialami do oglądania, można przerwać seans i do niego wrócić, napisy w różnych językach. Po prostu magia! Tak żyć to ja lubię.
 
 ![The Future Is Now, Old Man Mem](./3CbWnDXA.png)
@@ -46,7 +46,7 @@ ALE ta sielanka nie trwała długo, bo duże wytwórnie podpatrzyły jakie góry
 
 Robiąc bardzo szybki research (całe 30 sec), na samym filmwebie można filtrować po 30 platformach VOD/streamingowych. To chyba lekka przesada… Z drugiej strony, każda platforma stara się specjalizować w czymś innym. Gdyby człowiek miał opłacać to wszystko, chyba musiałby sprzedać nerkę.
 
-![](./qlKKfxOQ.png)
+![Lista dostępnych subskrypcji na Filmweb](./qlKKfxOQ.png)
 
 ## Branża aplikacji mobilnych
 
@@ -60,16 +60,15 @@ W końcu nadszedł czas, by wspomnieć o branży, która jest najbliższa mojemu
 
 Naturalnym by było sądzić, że jak wydajemy na grę 280 PLN to dostaniemy kompletne doświadczenie, jednak coraz częściej tak nie jest. Moim zdaniem to jest po prostu ewenement, że my jako konsumenci zgadzamy się na to, by w grze za pokaźne hajsiwo znajdowała się miesięczna subskrypcja. Tu moim ulubionym przykładem jest Just Dance. Gra w sklepie kosztuje około 280 cebulionów i zawiera 40 piosenek, ALE jak chcemy dostęp do większej biblioteki to trzeba nakarmić cyfrowego wampira. I to nawet nie tak mało, bo aż 104 zł rocznie, albo absurdalne 15 zł na miesiąc. Eh… ręce opadają. Nie dość, że człowiek musi kupić pełną grę to jeszcze to. I to wszystko by w trakcie zakrapianej imprezy pokręcić pupką w rytm ulubionych piosenek. Just Dance nie jest niestety odosobnionym przypadkiem. Coraz częściej gry, głównie sieciowe, dodają Battle Pass czy inną dodatkową formę monetyzacji i pozyskiwania pieniędzy od graczy, którzy już zakupili produkcję. Na szczęście (odpukać), jest to zawartość dodatkowa i nie trzeba jej kupować, by cieszyć się w pełni z produkcji, ale pewnie wystarczy trochę poczekać i to się zmieni na gorsze.
 
-![](./OVzQuQcg.png)
+![Cena subskrypcji do Just Dance Unlimited](./OVzQuQcg.png)
 
 Przez chwilę skupmy się na tym, co dostajemy jako dodatek do rozrywki online przy zakupie Playstation Plus czy Xbox Live Gold - mianowicie gry. Obie usługi oferują co miesiąc parę tytułów za friko. Oczywiście można w nie grać tylko, gdy mamy aktywny abonament. Ale co za darmo to za darmo. Jednak niech każdy użytkownik konsoli spojrzy sobie głęboko w serduszko i odpowie na jedno zarąbiście ważne pytanie - ile tak na prawdę ograliście tych tytułów, które były za darmo? W moim wypadku pewnie to liczba nie większa niż 10. A opłacam abonament od paru lat. A to głównie dlatego, że jak jest jakaś gra co łaskocze mnie w odpowiednich miejscach to po prostu idę do sklepu i ją kupuję. Albo raczej szukam używki, bo taniej. Cebula mocno. Ale skoro płaci się gruby szmal miesięcznice to miło, że dostaje się coś w pakiecie. To z kategorii nie chcę tego, ale jak za darmo, to wezmę, dla siebie i kolegi. Ale ile tak naprawdę w tym wszystkim jest wartości dla konsumenta, a ile chęci zamaskowania dodatkowej formy zarabiania na konsumencie, który zakupił już konsolę?
 
-![](./-IvY9-NQ.png)
-
+![Oferta Playstation Plus](./-IvY9-NQ.png)
 
 Stosunkowo nowym graczem na rynku jest rewolucyjna (bez ironii) usługa Xbox Game Pass w której za zaledwie 40 PLN miesięcznice zyskuje się dostęp do ponad 400 gier z czego duża większość to produkcje tak zwane AAA. I jako wisienka na torcie dobroci wszystkie gry studiów, nad którymi wielkie M ma władzę, wychodzą tam w dniu premiery. Jest to coś niespotykanego do tej pory. Jak to tak? Można mieć najnowszą grę za 40 zyka? Stety albo niestety jest to dostępne tylko na PC i Xbox, ale nie można mieć wszystkiego w życiu. O ekskluzywności można napisać kolejny artykuł. I pojawia się znowu pytanie, ile jesteśmy wstanie przejść takowych gier w ciągu 1 miesiąca? Czy taka subskrypcja opłaca się bardziej dla większości ludzi, którzy w tygodniu mają zaledwie 4/5 godzin by w coś zagrać? Czy nie lepiej kupić 1 grę i mieć ją do momentu, aż z nieba zacznie spadać ogień piekielny? Co ja tam wiem…
 
-![](./lqzq80eg.png)
+![Oferta Xbox Game Pass](./lqzq80eg.png)
 
 ## Ale czemu każdy chce mieć subskrypcje?
 

@@ -1,26 +1,15 @@
-+++
-title = "O mnie"
-description = "Hugo, the world's fastest framework for building websites"
-date = "2019-02-28"
-aliases = ["o-mnie"]
-author = "lee.so"
-draft = true
-+++
+---
+author: 'Kacper "Rogemus" Rogowski'
+title: "O mnie"
+date: "2022-05-12"
+description: "Wszystko co musisz wiedzieć o autorze tej nieszczęsnej strony"
+aliases: ["o-mnie"]
+---
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+Mam na imię Kacper, Front End developer z zawodu i pasji. W internetach pojawiam się pod nickiem `@rogemus`. Pisanie kodu to zarówno moja praca jak i jedna z moich rozrywek poza nią. O sobie mógłbym powiedzieć, że jestem raczej geekiem bądź nerdem (nigdy nie ogarniałam różnicy). Lubię kod, komiksy no i przede wszystkim - gry. To ostatnie zabrało mi parę słodkich lat z mojego niezbyt długiego życia. Raczej moje zainteresowanie nie wpadają w kanon rzeczy ekstrawaganckich, ale mimo to wydaje mi się, drogi czytelniku. że wyniesiesz z tej strony jakieś przyjemne, bądź pożyteczne informacje. Przynajmniej mam taką szczerą nadzieję. A jak nie to chociaż będziesz w stanie zjednać się ze mną w bólu, cierpieniu i marudzeniu.
 
-Hugo makes use of a variety of open source projects including:
+Wydaje mi się, że tyle wystarczy by nakreślić portret autora, zatem czas przejść do meritum, czyli do tego po co to wszystko? Powodów jest parę. Pierwszym z nich jest niezwykle banalny - zawsze to chciałem zrobić. Nie wiem czemu zawsze uważałem, że posiadanie jakiegoś bloga czy małej społeczności jest to coś fajnego i zarazem niecodziennego. Drugi jest już bardziej samolubny - chce sobie pomarudzić. Na gry, na wszystkie ich dobre i każdą z ich okropnych i głupich stron. Jako polak, plucie żółcią, jest to naturalna dla mnie umiejętność by wytknąć absurdalne aspekty z branży która jest odpowiedzialna za zabranie mi nie jednego roku życia.
 
-* https://github.com/yuin/goldmark
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+Zapraszam do odzywania się na [twitterze](https://twitter.com/rogemus), albo w komentarzach. 
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
-
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
-
-Websites built with Hugo are extremely fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+Miłej lektury i do usłyszenia! 

@@ -1,17 +1,18 @@
 baseURL = 'https://rogemus.github.io/'
 languageCode = 'pl-pl'
-title = "Rogemus"
+title = "Rogemus - Felietony o grach i absurdach"
 theme = "rogtheme"
 enableRobotsTXT = true
+disqusShortname = "rogemus"
 
 [taxonomies]
   series = 'series'
 
 [params]
   mainSections = ["posts"]
-  description = "This is my awesome blog"
+  description = "O grach, o absurdach i jeszcze raz o grach - felietony i marudzenie na wszystko, byście wy nie musieli."
   author = 'Kacper "Rogemus" Rogowski'
-  images = []
+  images = ["social-card.png"]
 
   [params.social]
     twitter = "rogemus"
@@ -28,14 +29,9 @@ enableRobotsTXT = true
     name = "O Mnie"
     url = "/o-mnie/"
     weight= 5
-  [[menu.main]]
-    identifier = "felietony"
-    name = "Felietony"
-    url = "/categories/felietony"
-    weight= 10
 
   [[menu.footer]]
-    identifier = "polityka-prywatnosci"
-    name = "Polityka Prywatności"
-    url = "/polityka-prywatnosci"
-    weight = 10
+    identifier = "o-mnie"
+    name = "O Mnie"
+    url = "/o-mnie/"
+    weight= 5
