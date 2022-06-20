@@ -503,7 +503,7 @@ iframe {
 
 /* post single */
 .post.single {
-  margin-top: -80px;
+  /* margin-top: -80px; */
   background: var(--white);
   position: relative;
   padding: var(--spacing-m);
