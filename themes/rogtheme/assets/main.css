@@ -124,12 +124,12 @@ p {
 
 a {
   text-decoration: none;
-  color: var(--black);
+  color: var(--oragne);
 }
 
 a:hover {
-  color: var(--oragne);
   text-decoration: underline;
+  color: var(--oragne);
 }
 
 strong,
@@ -339,6 +339,7 @@ iframe {
 .nav-list-item-link {
   padding: var(--spacing-m);
   display: block;
+  color: var(--black);
 }
 
 /* social */
@@ -376,7 +377,8 @@ iframe {
 .logo-link {
   display: flex;
   align-items: center;
-}
+  color: var(--black);
+} 
 
 .logo-link-text {
   font-size: var(--font-size-l);
@@ -442,7 +444,11 @@ iframe {
 /* post */
 .post-content {
   text-align: justify;
-  text-justify: inter-word;
+  word-break: break-word;
+}
+
+.post-content a {
+  white-space: nowrap;
 }
 
 .post {
@@ -453,6 +459,15 @@ iframe {
 .post-title {
   margin: 0;
   padding: var(--spacing-s) 0;
+  color: var(--black);
+}
+
+.post-title a {
+  color: var(--black);
+}
+
+.post-title a:hover {
+  color: var(--oragne);
 }
 
 .post-date {
@@ -463,6 +478,8 @@ iframe {
 .post-description {
   padding: var(--spacing-s) 0;
   color: var(--greyVeryDark);
+  text-align: justify;
+  word-break: break-word;
 }
 
 .post-thumbnail {
