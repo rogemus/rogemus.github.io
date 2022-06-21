@@ -696,3 +696,28 @@ iframe {
     width: 100px;
   }
 }
+
+.scrollTop {
+  position: fixed;
+  background: var(--grey);
+  right: var(--spacing-l);
+  bottom: var(--spacing-l);
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius);
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
+.scrollTop svg {
+  width: 20px;
+  fill: var(--greyDark);
+}
+
+.scrollTop.show {
+  opacity: 1;
+}
