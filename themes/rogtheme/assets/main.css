@@ -46,7 +46,7 @@ html {
   margin: 0;
   color: var(--black);
   font-family: var(--font-main);
-  background: var(--white);
+  background: var(--greyLight);
   font-size: var(--font-size-m);
 }
 
@@ -482,6 +482,22 @@ iframe {
   word-break: break-word;
 }
 
+.post {
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.post-title {
+  padding: var(--spacing-m);
+}
+
+.post-description,
+.post-meta {
+  padding: 0 var(--spacing-m);
+}
+
+
 .post-thumbnail {
   border-radius: var(--radius);
   overflow: hidden;
@@ -507,6 +523,10 @@ iframe {
   background: var(--white);
   position: relative;
   padding: var(--spacing-m);
+}
+
+.post.single .post-title {
+  padding: 0;
 }
 
 .post.single > * {
