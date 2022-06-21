@@ -675,3 +675,24 @@ iframe {
     margin: 0 var(--spacing-m);
   }
 }
+
+/* 404 */
+.e404 {
+  font-size: 200px;
+  display: flex;
+  justify-content: center;
+} 
+
+.e404 img {
+  width: 200px;
+}
+
+@media (max-width: 600px) {
+  .e404 {
+    font-size: 100px;
+  } 
+  
+  .e404 img {
+    width: 100px;
+  }
+}
