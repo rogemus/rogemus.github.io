@@ -1,7 +1,7 @@
 ---
 author: 'Kacper "Rogemus" Rogowski'
 title: "Subskrypcje wszędzie i na wszystko"
-date: "2022-05-13"
+date: "2022-06-20"
 description: "Subskrypcje są nieodłączną częścią naszego codziennego życia. Opłacamy ich często więcej niż chcemy się do tego przyznać, albo co gorsza więcej niż pamiętamy, że opłacamy. Czy każdą dziedzinę życia można pokryć subskrypcją? A jeśli tak, to czy powinniśmy?"
 aliases: ["subskrypcje-wszedzie-i-na-wszystko"]
 tags: [
