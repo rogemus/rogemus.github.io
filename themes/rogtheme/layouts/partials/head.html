@@ -22,7 +22,7 @@
 
 {{ $main_css := resources.Get "main.css" }}
 {{ $css := slice $main_css | resources.Concat "main.css" | minify }}
-<link rel="stylesheet" href="{{ $css.Permalink }}">
+<link rel="stylesheet" href="{{ $css.Permalink }}?{{ now.Unix }}">
 
 <!-- Generator -->
 {{ hugo.Generator }}
