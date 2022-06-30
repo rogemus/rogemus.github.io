@@ -1,7 +1,7 @@
 ---
-title: "Czy Elden Ring Jest Dla Mnie?"
-date: 2022-06-29T23:53:26+02:00
-description: ""
+title: "Czy Elden Ring jest dla mnie?"
+date: "2022-07-01"
+description: "Elden Ring jest to gra, którą można kochać albo nienawidzić. Nie ma nic pośrodku. Albo człowiek wsiąka na 100 godzin, albo odbija się od pierwszej godziny gry. Daj się przekonać by dołączyć do coraz większej grupy ludzi co nienawidzą siebie i swoich padów."
 aliases: [
   "/czy-elden-ring-jest-dla-mnie",
   "/posts/czy-elden-ring-jest-dla-mnie"
@@ -17,8 +17,8 @@ categories: [
 ]
 feature_img: "featured.png"
 feature_img_caption: "Czy Elden Ring Jest Dla Mnie?"
-2022:
-  - "06"
+# 2022:
+#   - "10"
 ---
 
 Elden Ring jest to gra, którą można kochać albo nienawidzić. Nie ma nic pośrodku. Albo człowiek wsiąka na 100 godzin, albo odbija się od pierwszej godziny gry. Ja zaliczam się do tej grupki, co zatraciły poczucie czasu i godność w zmaganiach z tą produkcją. Każda sekunda cierpienia, frustracji i szczypta kontrolowanego gniewu były tego warte, by przeżyć to wszystko. Ale czy to gra dla przeciętnego zjadacza cyfrowego chleba? 
