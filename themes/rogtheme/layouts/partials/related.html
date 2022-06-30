@@ -1,4 +1,4 @@
-{{ $related := .Site.RegularPages.Related . | first 2 }}
+{{ $related := (where (.Site.RegularPages.Related .) "Type" "posts") | first 2 }}
   {{ with $related }}
   <ul class="related">
     {{ range . }}
@@ -6,8 +6,7 @@
       <a class="related-item-link" title="{{ .Title }}" href="{{ .RelPermalink }}">
           {{ if .Params.feature_img }}
           {{ $img := .Resources.GetMatch (printf "**%s" .Params.feature_img) }}
-          {{ $img := $img.Fit "300x300" }}
-          {{ $img := $img.Crop "300x100" }}
+          {{ $img := $img.Fill "300x100" }}
           <img
             loading="lazy"
             class="related-item-img"

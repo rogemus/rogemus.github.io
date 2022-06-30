@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+{{ $rootTitle := .Page.Title }}
+
+{{ if eq .Page.Title "Tags" }}
+  {{ $rootTitle = "" }}
+{{ end }}
+
+  <div class="posts">
+
+    {{ range .Paginator.Pages }}
+      <article class="post">
+        <h3 class="post-title">
+          <a title="{{ .Title }}" href="{{ .Permalink }}">{{ $rootTitle }}/{{ .Title }}</a>
+        </h3>
+      </article>
+    {{ end }}
+
+  </div>
+
+  {{ template "_internal/pagination.html" . }}
+{{ end }}
