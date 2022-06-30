@@ -6,10 +6,10 @@
   {{ $rootTitle = "" }}
 {{ end }}
 
-  <div class="posts">
+  <div class="posts terms">
 
     {{ range .Paginator.Pages }}
-      <article class="post">
+      <article class="post ">
         <h3 class="post-title">
           <a title="{{ .Title }}" href="{{ .Permalink }}">{{ $rootTitle }}/{{ .Title }}</a>
         </h3>

@@ -1,6 +1,6 @@
 {{ if .Params.feature_img }}
     {{ $img := .Resources.GetMatch (printf "**%s" .Params.feature_img) }}
-    {{ $img := $img.Fill "800x300" }}
+    {{ $img := $img.Fit "800x400" }}
 
     <div class="post-thumbnail">
       <a href="{{ .Permalink }}" title="{{ .Title }}" class="post-thumbnail-link">
