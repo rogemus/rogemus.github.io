@@ -1,14 +1,12 @@
 name: github pages
 
 on:
-  pull_request:
+  push:
     branches:
-      - main
-    types: [closed]
+      - 'main'
 
 jobs:
   deploy:
-    if: github.event.pull_request.merged == true
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2

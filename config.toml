@@ -6,8 +6,26 @@ enableRobotsTXT = true
 disqusShortname = "rogemus"
 googleAnalytics = "G-23WEL3MJTZ"
 
+[related]
+  includeNewer = true
+  threshold = 40
+  toLower = false
+[[related.indices]]
+  name = 'keywords'
+  weight = 20
+[[related.indices]]
+  name = 'date'
+  weight = 10
+
 [taxonomies]
-  series = 'series'
+  tag = "tags"
+  2022 = "2022"
+
+
+[permalinks]
+  posts = "/:year/:month/:title/"
+  archm = "/:year/:month/"
+  archy = "/:year/"
 
 [params]
   mainSections = ["posts"]
@@ -35,4 +53,9 @@ googleAnalytics = "G-23WEL3MJTZ"
     identifier = "o-mnie"
     name = "O Mnie"
     url = "/o-mnie/"
+    weight= 5
+  [[menu.footer]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
     weight= 5

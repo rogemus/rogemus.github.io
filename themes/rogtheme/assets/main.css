@@ -432,6 +432,11 @@ iframe {
   font-size: 1.5rem;
 }
 
+.posts h3 {
+  font-size: 1.25rem;
+  line-height: 1.0;
+}
+
 .post {
   border-bottom: 1px solid var(--grey);
   padding-bottom: var(--font-size-l);
@@ -646,8 +651,9 @@ iframe {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  margin: var(--spacing-l) 0 0 0;
+  margin: 0;
   padding: 0;
+  margin-bottom: var(--spacing-m);
 }
 
 .related-item {
