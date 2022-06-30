@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+  <div class="posts">
+
+    {{ $rootTitle := .Page.Title }}
+    {{ range .Paginator.Pages }}
+      <article class="post">
+        <h2 class="post-title">
+          <a title="{{ .Title }}" href="{{ .Permalink }}">{{ $rootTitle }}/{{ .Title }}</a>
+        </h2>
+      </article>
+    {{ end }}
+  </div>
+
+  {{ template "_internal/pagination.html" . }}
+{{ end }}
