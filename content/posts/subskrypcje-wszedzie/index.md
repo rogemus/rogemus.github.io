@@ -20,8 +20,7 @@ categories: [
 ]
 feature_img: "featured.png"
 feature_img_caption: "Subskrypcje wszędzie i na wszystko"
-2022:
-  - "06"
+2022: ["06"]
 ---
 Subskrypcje są nieodłączną częścią naszego codziennego życia. Opłacamy ich często więcej niż chcemy się do tego przyznać, albo co gorsza więcej niż pamiętamy, że opłacamy.
 
