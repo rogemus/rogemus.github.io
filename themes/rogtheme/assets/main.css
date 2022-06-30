@@ -46,7 +46,7 @@ html {
   margin: 0;
   color: var(--black);
   font-family: var(--font-main);
-  background: var(--white);
+  background: var(--greyLight);
   font-size: var(--font-size-m);
 }
 
@@ -437,6 +437,13 @@ iframe {
   line-height: 1.0;
 }
 
+/* terms */
+.terms .post {
+  padding-bottom: 0;
+  margin-bottom: var(--spacing-m);
+}
+
+/* post */
 .post {
   border-bottom: 1px solid var(--grey);
   padding-bottom: var(--font-size-l);
@@ -446,7 +453,6 @@ iframe {
   border-bottom: 0;
 }
 
-/* post */
 .post-content {
   text-align: justify;
   word-break: break-word;
@@ -487,6 +493,22 @@ iframe {
   word-break: break-word;
 }
 
+.post {
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.post-title {
+  padding: var(--spacing-m);
+}
+
+.post-description,
+.post-meta {
+  padding: 0 var(--spacing-m);
+}
+
+
 .post-thumbnail {
   border-radius: var(--radius);
   overflow: hidden;
@@ -512,6 +534,10 @@ iframe {
   background: var(--white);
   position: relative;
   padding: var(--spacing-m);
+}
+
+.post.single .post-title {
+  padding: 0;
 }
 
 .post.single > * {
@@ -637,7 +663,6 @@ iframe {
 }
 
 .related-item {
-  background: var(--greyLight);
   padding: var(--spacing-m);
   margin: var(--spacing-m) 0;
   border-radius: var(--radius);
