@@ -445,12 +445,8 @@ iframe {
 
 /* post */
 .post {
-  border-bottom: 1px solid var(--grey);
+  box-shadow: 0px 2px 0 var(--grey);
   padding-bottom: var(--font-size-l);
-}
-
-.post:last-of-type {
-  border-bottom: 0;
 }
 
 .post-content {
@@ -501,11 +497,13 @@ iframe {
 
 .post-title {
   padding: var(--spacing-m);
+  padding-bottom: 0;
 }
 
 .post-description,
 .post-meta {
-  padding: 0 var(--spacing-m);
+  padding-left: var(--spacing-m);
+  padding-right: var(--spacing-m);
 }
 
 
