@@ -798,6 +798,7 @@ iframe {
   visibility: visible;
 }
 
-#layout {
+#disqus_thread > iframe {
+  background: var(--white);
   padding: var(--spacing-m);
 }
