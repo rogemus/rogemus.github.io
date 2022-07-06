@@ -1,0 +1,9 @@
+<div class="cookie-banner">
+  <div class="cookie-banner__msg">
+    Wykorzystuję pliki cookies w celu prawidłowego działania strony, korzystania z narzędzi marketingowych i analitycznych, zapewniania funkcji społecznościowych oraz systemu komentarzy. <a href="/polityka-prywatnosci">Dowiedz się więcej</a>
+  </div>
+  <button class="cookie-banner_accept">Akceptuję</button>
+</div>
+
+{{ $built := resources.Get "js/cookieBanner.js" | resources.Minify }}
+<script type="text/javascript" src="{{ $built.RelPermalink }}" defer></script>
