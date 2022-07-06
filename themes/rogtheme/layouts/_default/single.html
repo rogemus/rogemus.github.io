@@ -20,19 +20,20 @@
 {{ end }}
 
 {{ define "main" }}
-    {{ if .Params.feature_img }}
-      <div class="post single">
-    {{ else }}
-      <div class="post">
-    {{ end }}
+  <div class="post single">
 
     <h1 class="post-title">
       {{ .Title }}
     </h1>
 
-    <time class="post-date">
-      {{ .PublishDate.Format "02.01.2006" }}
-    </time>
+    <div class="post-meta">
+      <time class="post-date">
+        {{ .PublishDate.Format "02.01.2006" }}
+      </time>
+      <div class="post-readtime">
+        {{ partial "readTime" . }}
+      </div>
+    </div>
 
     <div class="post-content">
       {{ .Content }}
@@ -50,9 +51,10 @@
 
     {{ partial "related" . }}
 
-    {{ partial "scrollTop" . }}
-
-    {{ template "_internal/disqus.html" . }}
-
   </div>
+
+  {{ template "_internal/disqus.html" . }}
+
+  {{ partial "scrollTop" . }}
+
 {{ end }}
