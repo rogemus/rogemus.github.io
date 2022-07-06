@@ -34,6 +34,9 @@
 
   /* border */
   --radius: 5px;
+
+  /*  */
+  color-scheme: light dark;
 }
 
 * {
@@ -208,6 +211,10 @@ blockquote {
 
 blockquote p {
   margin: 0;
+}
+
+iframe {
+  color-scheme: light dark;
 }
 
 hr {
@@ -787,4 +794,8 @@ iframe {
 
 .show {
   opacity: 1;
+}
+
+#layout {
+  padding: var(--spacing-m);
 }
