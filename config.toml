@@ -55,7 +55,12 @@ googleAnalytics = "G-23WEL3MJTZ"
     url = "/o-mnie/"
     weight= 5
   [[menu.footer]]
+    identifier = "polityka-prywatnosci"
+    name = "Polityka Prywatności"
+    url = "/polityka-prywatnosci/"
+    weight= 6
+  [[menu.footer]]
     identifier = "tags"
     name = "Tags"
     url = "/tags/"
-    weight= 5
+    weight= 7
