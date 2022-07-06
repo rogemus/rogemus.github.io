@@ -775,6 +775,7 @@ iframe {
   justify-content: center;
   opacity: 0;
   transition: opacity 200ms;
+  visibility: hidden;
 }
 
 .cookie-banner__msg {
@@ -794,6 +795,7 @@ iframe {
 
 .show {
   opacity: 1;
+  visibility: visible;
 }
 
 #layout {
