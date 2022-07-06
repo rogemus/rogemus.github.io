@@ -757,6 +757,34 @@ iframe {
   fill: var(--greyDark);
 }
 
-.scrollTop.show {
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--white);
+  padding: var(--spacing-m);
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
+.cookie-banner__msg {
+  padding: var(--spacing-m);
+}
+
+.cookie-banner_accept {
+  border: 1px solid var(--oragne);
+  color: var(--oragne);
+  padding: var(--spacing-m);
+}
+
+.cookie-banner_accept:hover {
+  color: var(--white);
+  background: var(--oragne);
+}
+
+.show {
   opacity: 1;
 }
