@@ -40,6 +40,8 @@ Obecnie chyba każda nasza potrzeba zostanie zrealizowana przez jakiś portal, k
 
 I takich przykładów jest wuchta. Mam nadzieje, że rozumiecie o co mi chodzi; jest tego dużo i ciągle tego przybywa.
 
+{{< inArticleAd1 >}}
+
 ## Branża filmowa
 
 Ale to co mnie osobiście psychicznie i czasem też fizycznie boli to jest fakt, że firmy zaczęły przesadzać z tym wciskaniem tego modelu płatności do każdej możliwej usługi. Netflix miał być rycerzem w złotych kaloszach, który uwolni nas od jarzma standardowej nudnej, pełnej reklam telewizji. Bez wątpienia tak było na początku. Wchodziło się na portal i cyfrowe półki były zapełnione po brzegi filmami oraz serialami do oglądania, można przerwać seans i do niego wrócić, napisy w różnych językach. Po prostu magia! Tak żyć to ja lubię.
@@ -77,6 +79,8 @@ Stosunkowo nowym graczem na rynku jest rewolucyjna (bez ironii) usługa Xbox Gam
 ## Ale czemu każdy chce mieć subskrypcje?
 
 By nie być gołosłownym, to pewnie niektórzy z was pamiętają, że program co dziś jest uznawany za standard branży i niezbędny młotek w skrzynce każdego domorosłego cyfrowego artysty, Photoshop, był dawniej ciężko osiągalny. Powód był prosty - cena. Sam pamiętam jak za Photoshopa CS3 trzeba było w skarpecie znaleźć parę tysięcy złotych. W roku, w którym została wydana pierwsza część książki 50 twarzy Greya, czyli 2012, Adobe zrobiło coś czego nie spodziewał się nikt. Zmienili model dystrybucji na subskrypcje. Program stał się ogólnodostępny i każdy mógł pozwolić sobie na korzystanie z niego. I to dla tego w zaledwie pierwsze 3 miesiące od wprowadzenie Creative Cloud, Adobe zarobiło ponad 500 milionów dolarów więcej monetek. Dla osób co miały 2 z maty - to bardzo dużo pieniędzy, można za to kupić co najmniej 10 batonów. 
+
+{{< inArticleAd2 >}}
 
 Odpowiadając na pytanie, zadane w podtytule tego paragrafu, dla pieniędzy. Każdemu z nas łatwiej jest zapłacić co miesiąc 15 PLN za korzystanie czy dostęp do usługi niż np. raz 1500 zł. Tylko w przypadku tego modelu często zapominamy o tym, że mamy jakaś subskrypcje i urocza firma zarabia dużo więcej niż planowaliśmy. I często mam wrażenie, że firmy liczą na to. Przyciągają nas darmowym pierwszym miesiącem, czy bardzo dobrą promocją a potem bam! Cyfrowa pałka subskrypcji uderza w nasz nic niespodziewający się portfel. A co gorsza będzie to robić, aż źródełko monetek nie wyschnie. A czemu? Bo mogą.
 
