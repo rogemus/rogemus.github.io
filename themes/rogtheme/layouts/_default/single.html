@@ -9,7 +9,6 @@
           loading="lazy"
           class="post-thumbnail-img"
           src="{{ $img.RelPermalink }}"
-          loading="lazy"
           width="1000"
           height="500"
           alt="{{ .Params.feature_img_caption }}"
@@ -50,6 +49,8 @@
     {{ end }}
 
     {{ partial "related" . }}
+
+    {{ partial "displayAd" . }}
 
   </div>
 
