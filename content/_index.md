@@ -1,3 +1,0 @@
----
-author: 'Kacper "Rogemus" Rogowski'
----

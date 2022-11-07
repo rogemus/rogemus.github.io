@@ -1,0 +1,141 @@
+baseURL: "https://rogemus.pl/"
+languageCode: pl-pl
+title: Rogemus - Felietony o grach i absurdach
+author: Kacper "Rogemus" Rogowski
+theme: PaperMod
+enableRobotsTXT: true
+disqusShortname: rogemus
+googleAnalytics: G-23WEL3MJTZ
+DefaultContentLanguage: "pl"
+
+permalinks:
+  posts: /:filename
+
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+
+privacy:
+  vimeo:
+    disabled: false
+    simple: true
+
+  twitter:
+    disabled: false
+    enableDNT: true
+    simple: true
+    disableInlineCSS: true
+
+  instagram:
+    disabled: false
+    simple: true
+
+  youtube:
+    disabled: false
+    privacyEnhanced: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  title: Rogemus - Felietony o grach i absurdach
+  description: "O grach, o absurdach i jeszcze raz o grach - felietony i marudzenie na wszystko, byście wy nie musieli."
+  keywords: [Blog, Portfolio, PaperMod]
+  images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "02/01/2006"
+  defaultTheme: auto
+
+  ShowShareButtons: true
+  ShowReadingTime: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: false
+  disableAnchoredHeadings: false
+  disableThemeToggle: false
+  comments: true
+
+  cover:
+    hidden: false
+    hiddenInList: false
+    hiddenInSingle: false
+
+  assets:
+    disableHLJS: true
+    favicon: "<link / abs url>"
+    favicon16x16: "<link / abs url>"
+    favicon32x32: "<link / abs url>"
+    apple_touch_icon: "<link / abs url>"
+    safari_pinned_tab: "<link / abs url>"
+
+  label:
+    icon: /avatar-circle.png
+    iconHeight: 55
+
+  homeInfoParams:
+    Title: "Hi there \U0001F44B"
+    Content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula orci et velit malesuada, sit amet ultrices tortor pretium. In tempor gravida volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce ante metus, convallis eget imperdiet euismod, ullamcorper nec magna. Sed sit amet quam at urna volutpat sollicitudin nec non nisi. Suspendisse varius fringilla magna et pellentesque. Mauris et urna sit amet mauris faucibus tincidunt. In turpis tellus, elementum a lacus vitae, varius placerat mauris.
+
+  socialIcons:
+    - name: twitter
+      url: "https://twitter.com/rogemus"
+    - name: rss
+      url: "/index.xml"
+
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
+    bing:
+      SiteVerificationTag: "XYZabc"
+    yandex:
+      SiteVerificationTag: "XYZabc"
+
+  fuseOpts:
+    location: 1
+    threshold: 0.2
+    distance: 200
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - name: Strona Główna
+      url: /
+      weight: 1
+    - name: Publicystyka
+      url: publicystyka
+      weight: 10
+    - identifier: o-mnie
+      name: "O mnie i blogu"
+      url: "/o-mnie/"
+      weight: 30
+
+  footerright:
+    - identifier: sitemap
+      name: Sitemap
+      url: /sitemap.xml
+      weight: 10
+    - identifier: polityka-prywatnosci
+      name: Polityka Prywatności
+      url: /polityka-prywatnosci/
+      weight: 20
+
+  footerleft:
+    - name: Szukaj
+      url: szukaj/
+      weight: 10
+    - identifier: tags
+      name: Tagi
+      url: /tags/
+      weight: 20
+    - identifier: categories
+      name: Kategorie
+      url: /categories/
+      weight: 30
+    - identifier: o-mnie
+      name: "O Mnie"
+      url: "/o-mnie/"
+      weight: 40
