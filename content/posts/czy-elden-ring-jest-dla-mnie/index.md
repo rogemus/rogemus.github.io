@@ -15,14 +15,16 @@ categories: [
   "gaming",
   "felieton",
 ]
-feature_img: "featured.png"
-feature_img_caption: "Czy Elden Ring Jest Dla Mnie?"
-2022: ["01"]
+cover:
+  image: "featured.png"
+  alt: "Czy Elden Ring Jest Dla Mnie?"
+ShowToc: true
+TocOpen: true
 ---
 
 Elden Ring jest to gra, którą można kochać albo nienawidzić. Nie ma nic pośrodku. Albo człowiek wsiąka na 100 godzin, albo odbija się od pierwszej godziny gry. Ja zaliczam się do tej grupki, co zatraciły poczucie czasu i godność w zmaganiach z tą produkcją. Każda sekunda cierpienia, frustracji i szczypta kontrolowanego gniewu były tego warte, by przeżyć to wszystko. Ale czy to gra dla przeciętnego zjadacza cyfrowego chleba? 
 
-![Elden Ring - Winda Dectus](./t13RAg1A.png)
+![Elden Ring - Winda Dectus](./images/t13RAg1A.png)
 
 Elden Ring został wyprodukowany przez From Software, czyli studio, które w tym momencie można nazwać legendarnym. Dla tych 2 osób, które spędziły życie w lasach albo jaskiniach, twórca ten jest odpowiedzialny za wydanie takich cudów jak: seria Dark Souls, gry Bloodborne, Sekiro. Delikatnie mówiąc, stworzyli oni osobny gatunek gier, który wcześniej nie istniał, albo nie był zbyt dominujący na rynku. Teraz co trzecia gra chce być “soulslike”, mając nadzieję, że zreprodukuje sukces Japońskiego studia. Dzięki temu zjeby jak ja, które lubią wyzwania i czerpią masochistyczną przyjemność z dręczenia swojego stanu psychicznego i pada, mają niemały wybór jeśli chodzi o “trudne” gry. Twórcy mali i duzi starają się wytworzyć coś ciekawego, co trafi do takiego niereformowalnego człowieka jak ja. Ale nie o nich w tym materiale. Wróćmy do Elden Ring…
 
@@ -30,7 +32,7 @@ W 2022 na rynek wypuścili swoje nowe IP i świat się po tym zesrał. Każdy gr
 
 Po wybraniu startowej klasy, lądujemy w małym kościółku i zaczyna się nasza przygoda. Jak to zwykło w grach studia From Software, w pierwszych 5 minutach gry jesteśmy skazani na okropną śmierć. Śmierć z czegoś, co wygląda jak mop, który zamiast dyndających frędzelków do mycia podłogi ma dyndające łapki. Fun. Na całe szczęście można wrócić do pana mopa, gdy już spędzimy parę rundek na siłce, by mu pokazać, kto teraz jest frajerem. Jest to jedno z lepszych uczuć. I będzie ono się powtarzać całą grę. Ale o tym za chwilę. Dopiero po poznaniu, gdzie nasze miejsce, jesteśmy przenoszeni do punkty, który można nazwać poradnikiem i początkiem gry. Czyli ciemnej jak noc jaskini, gdzie dostajemy naszą flaszeczkę do leczenia. No i tyle. Po zmierzeniu się z niezbyt trudnym bossem i opuszczeniu ciemnicy wita nas ono. Złote drzewo. I ziomek w białej masce, który obraża nas w co drugim zdaniu.
 
-![Elden Ring - Złote Drzewo (Erdtree)](./GuQMVXrg.png)
+![Elden Ring - Złote Drzewo (Erdtree)](./images/GuQMVXrg.png)
 
 W tym momencie stoimy w tym, co jest największym atutem i jednocześnie przekleństwem tej gry, czyli otwarty świat. Dostajemy nieskrępowaną możliwość pójścia praktycznie wszędzie, gdzie cyfrowe oczy naszej postaci potrafią dosięgnąć. I bardzo szybko gra tłumaczy nam realia tego świata, poprzez niezwykle przyjacielską postać jaką jest “Strażnik Drzewa”. Jak nam chłopaczyna pierdyknie z kija to aż po drugiej stronie ekranu to czuć. Dzięki czemu w naszych małych główkach szybko powinien pojawić się komunikat, “a co jeśli go oleje i wrócę tu?”. I nic. Właśnie to jest to piękno tego świata. Widzisz przeciwnika, który jest dla ciebie za silny? Obejdź go. Nie da się? To idź gdzieś indziej i tu wróć za jakiś czas. Dostajemy nieskrępowaną możliwość zwiedzania całego otaczającego świata, pełnego smutku i śmierci. Co może być lepsze? Oczywiście dostajemy jakieś mgliste wskazówki, gdzie należy pójść, by kontynuować fabułę, jednak nie jest to forma jebitnej strzałki na mapie (jak w co niektórych grach), tylko dostajemy sugestie od niejednego NPC na drodze typu “widzisz ten wielki jak cholera zamek na wzgórku? Może jest to słabo przekazane, ale jest on ważny. Idź tam”.
 
@@ -40,13 +42,13 @@ Elden Ring można podzielić na 3 rodzaje rozgrywki. Pierwszym jest otwarty świ
 
 Z otwartego świata bardzo płynnie można przejść do 2 typu rozgrywki, czyli do lochów, rozmieszczonych dosłownie wszędzie. Nie są one częścią głównej fabuły i można powiedzieć, że służą jako dopełniacz całego świata. Niestety polskie słowo “loch” bardzo zamyka naszą wyobraźnie na korytarze pełne szkieletów i masą trumien wszelakiego rodzaju. I lochy tego typu również się tu znajdują. Ale są też inne takie jak kopalnie, tunele (kopalnia nie równa się tunel), krypty oraz grobowce pradawnych bohaterów. Każde z nich mają swoją własną estetykę i prawa rządzące nimi. W katakumbach są szkielety, w kopalniach górnicy itd. Każdy taki loch ma w swoim centrum mini bossa i zabicie go kończy się zdobyciem czegoś. Przejście jednego lochu to przeważnie od 30 minut do 1h grania. Wszystko zależy od wielkości i jak szybko szefuncia zabijemy.
 
-![Elden Ring - Caelid](./API7g1qA.png)
+![Elden Ring - Caelid](./images/API7g1qA.png)
 
 I ta część gry moim zdaniem jest najsłabsza. Elden Ring chwali się tym, że oferuje ponad 150 bossów do podbicia i duża ich większość jest właśnie we wszelakiego rodzaju pieczarach i cierpliwie na nas czeka z kanapeczkami i herbatką. Na papierze to brzmi fajnie, 150, ojej jak dużo. Ale lochy bardzo szybko się nudzą. Stają się powtarzalne i nie dają mega frajdy na zwiedzanie ich. Natomiast co do bossów, to nie jestem wstanie zliczyć, ile razy zabiłem tych samych typów. O matko polko i Jezusku w klapkach, zabiłem z 10 Dyniogłowych, jak nie więcej. To powinno dać jakiś obraz tego, jak często bossowie są po prostu wykorzystani na nowo, niczym szary papier toaletowy. Na szczęście takie lochy są czymś z gwiazdką, czyli dla chętnych. Niestety zawierają jednak masę przydatnego żelastwa. Więc czasem trzeba zacisnąć pośladki i po raz 100 szukać wajchy, by tylko otworzyć drzwi do bossa, by go szybko zabić. By to było jasne, twórcy starają się, by każdy loch był w jakiś sposób unikalny, ale moim zdaniem wychodzi to średnio.
 
 No i ostatni rodzaj rozgrywki, to są główne lochy. Czyli wielkie lokacje, w których rezyduje jakiś wielki dzban. Przybierają one różne formy, od zamków, po miasta jak i domek na drzewie. I tu tak naprawdę jest całe uroczę fabularne mięso tej gry. W nich mierzymy się z bossami, co są o 10 klas wyżej, niż wszystko, co wcześniej spotkaliśmy na swej drodze. Każdy taki loch ma swoją własną historię i styl, przez co nie da się ich pomylić z niczym innym. Wszyscy fani wcześniejszych produkcji studia, będą się czuli tu jak ryba w wodzie, albo jak parówka w bułce. Są to zamknięte przestrzenie, pełne skrótów i wszelakich wyzwań, które mają nas zachęcić do zakończenia grania. Co do bossów, to lekką ręką można powiedzieć, że każdy z nich jest cudowny na inny sposób. Czy to, jak każe nas serią tryliona ciosów na sekundę, czy jak po prostu postanowi się po nas przeturlać. To co jest raczej mało dziwne, nie każdy jest równie wymagający. Są jednostki, jak pewna gnijąca pani, co będzie nas łechtała swoim mieczem pewnie przez jakieś 100 podejść (ja potrzebowałem zaledwie 78 prób), ale trafiają się też jednostki pokroju wielkiego ognistego giganta, który przeważnie umiera na jakiś pierwszym albo drugim podejściu. Jednak siłę nadrabia wyglądem. O tym złego słowa powiedzieć nie mogę. Dla mnie osobiście najbardziej przyjemne walki to były z postaciami, które były gabarytów mojej postaci albo niewiele większe. Większość dużych bossów jednak ma to do siebie, że nie mieści się na ekranie i przez co kamera szaleje, co dodaje dodatkowe nieprzyjemne doznania. Więc Panowie, wielkość ma znaczenie.
 
-![Elden Ring - Malenia, Blade of Miquella](./aTIaNFJK.png)
+![Elden Ring - Malenia, Blade of Miquella](./images/aTIaNFJK.png)
 
 Nie można pisać, czy mówić o Elden Ringu, nie wspominając o fabule tej gry. Jest ona świetna. Tyle. W przeciwieństwie do wcześniejszych gier (z wyjątkiem Sekiro) fabuła nie wymaga od gracza czytania każdego znalezionego skrawka materiału, czy majtek, by dowiedzieć się co właściwie się odjaniepawla w tym świecie. Oczywiście opisy przedmiotów, poszerzają to wszystko, jednak podstawowy zarys fabularny można zrozumieć z cutscenek czy z rozmów z postaciami niezależnymi. Uważam, że sposób prezentacji jest w sam raz. Mówią ci trochę, kogo masz zabić i kim on jest, a z dodatkowych opisów możesz dowiedzieć się, dlaczego ziomkowi odwaliło i musiałeś go zabić. Nie trzeba od razu po przejściu gry, czy też szturmować Youtuba. Jednak nie uznaje tego za nic złego i sam korzystam usług youtuberów, by poszerzyć moją wiedzę o tej grze. 
 

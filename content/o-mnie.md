@@ -1,9 +1,9 @@
 ---
-author: 'Kacper "Rogemus" Rogowski'
 title: "O mnie"
 date: "2022-05-12"
 description: "Wszystko co musisz wiedzieć o autorze tej nieszczęsnej strony"
 aliases: ["o-mnie"]
+searchHidden: true
 ---
 
 Mam na imię Kacper, Front End developer z zawodu i pasji. W internetach pojawiam się pod nickiem `@rogemus`. Pisanie kodu to zarówno moja praca jak i rozryweka poza nią. O sobie mógłbym powiedzieć, że jestem raczej geekiem bądź nerdem (nigdy nie ogarniałam różnicy). Lubię kod, komiksy no i przede wszystkim - gry. To ostatnie zabrało mi parę słodkich lat z mojego niezbyt długiego życia. Raczej moje zainteresowanie nie wpadają w kanon rzeczy ekstrawaganckich, ale mimo to wydaje mi się, drogi czytelniku. że wyniesiesz z tej strony jakieś przyjemne, bądź pożyteczne informacje. Przynajmniej mam taką szczerą nadzieję. A jak nie to chociaż będziesz w stanie zjednać się ze mną w bólu, cierpieniu i marudzeniu.

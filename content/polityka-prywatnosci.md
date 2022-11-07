@@ -1,9 +1,9 @@
 ---
-author: 'Kacper "Rogemus" Rogowski'
 title: "Polityka prywatności i cookies"
 date: "2022-07-06"
 description: "Polityka prywatności i cookies"
 aliases: ["polityka-prywatnosci"]
+searchHidden: true
 ---
 Niniejsza Polityka prywatności i cookies („**Polityka**”) zawiera informacje dotyczące przetwarzania danych osobowych osób korzystających z usług świadczonych przez Kacper Rogowski („**Administrator**”) w ramach strony internetowej znajdującej się pod adresem: [rogemus.pl](https://rogemus.pl) („**Strona internetowa**”).
 
