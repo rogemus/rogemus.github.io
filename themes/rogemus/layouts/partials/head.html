@@ -1,13 +1,17 @@
 <meta charset="UTF-8">
-<meta name="author" content="{{ site.Params.Author.name }}" />
-<meta name="description" content="{{ site.Params.Description }}" />
+<meta name="author" content="{{ .Site.Params.Author.name }}" />
+<meta name="description" content="{{ .Site.Params.Description }}" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keywords" content="{{ site.Params.keywords }}" />
+<meta name="keywords" content="{{ .Site.Params.keywords }}" />
 
-
-<title>{{site.Title}}</title>
+<title>{{.Site.Title}}</title>
+<link rel="icon" type="image/x-icon" href="{{ .Permalink }}/favicon.ico">
 
 {{ $opts := dict "noMap" true "inlineImports" true}}
 {{ with resources.Get "css/styles.css" | postCSS $opts }}
 <link rel="stylesheet" href="{{ .RelPermalink }}">
 {{ end }}
+
+{{ template "_internal/twitter_cards.html" . }}
+{{ template "_internal/schema.html" . }}
+{{ template "_internal/opengraph.html" . }}
