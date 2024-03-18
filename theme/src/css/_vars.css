@@ -1,0 +1,70 @@
+:root {
+  /* Size */
+  --size-wrapper: 1000px;
+  --size-left: 70%;
+  --size-right: 100%;
+
+  /* Colors */
+  --color-white: #ffffff;
+  --color-neutral-50: #F8F8F8;
+  --color-neutral-100: #F4F4F5;
+  --color-neutral-200: #E4E4E7;
+  --color-neutral-600: #52525B;
+  --color-neutral-800: #27272A;
+  --color-info-800: #155E75;
+  --color-info-600: #0891B2;
+  --color-info-100: #CFFAFE;
+  --color-primary-800: #1E40AF;
+  --color-primary-600: #2563EB;
+  --color-accent-1: #0A66C2;
+  --color-accent-2: #2DBA4E;
+  --color-accent-3: #BFDBFE;
+
+  /* Boder Radius */
+  --border-r-100: 4px;
+  --border-r-200: 8px;
+
+  /* Shadow */
+  --shadow-100: 0px 1px 2px 0 rgba(30, 41, 59, 0.12);
+  --shadow-200: 2px 2px 10px 0px rgb(30 41 59 / 4%);
+  --shadow-300: 0px 2px 2px -1px rgba(30, 40, 59, 0.04), 0px 8px 16px -2px rgba(30, 41, 59, 0.12)§;
+
+  /* Font Family*/
+  --font-f-inter: "Inter", sans-serif;
+
+  /* Font Weight */
+  --font-w-semibold: 600;
+  --font-w-medium: 500;
+  --font-w-regular: 400;
+
+  /* Font Size */
+  --font-s-display: 40px;
+  --font-s-h1: 32px;
+  --font-s-h2: 28px;
+  --font-s-h3: 24px;
+  --font-s-h4: 20px;
+  --font-s-body-1: 16px;
+  --font-s-body-2: 14px;
+  --font-s-caption: 12px;
+
+  /* Line height;*/
+  --line-height-display: 52px;
+  --line-height-h1: 40px;
+  --line-height-h1: 36px;
+  --line-height-h1: 36px;
+  --line-height-h1: 30px;
+  --line-height-body-1: 24px;
+  --line-height-body-2: 20px;
+  --line-height-caption: 18px;
+
+  /* Spacing */
+  --space-25: 2px;
+  --space-50: 4px;
+  --space-100: 8px;
+  --space-150: 12px;
+  --space-200: 16px;
+  --space-300: 24px;
+  --space-400: 32px;
+  --space-600: 48px;
+  --space-800: 64px;
+}

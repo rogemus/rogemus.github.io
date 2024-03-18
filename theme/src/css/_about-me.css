@@ -1,0 +1,53 @@
+.about-me {
+  & h1 {
+    color: var(--color-primary-600);
+
+    @media(min-width: 500) {
+      font-size: var(--font-s-display);
+      line-height: var(--line-height-display);
+    }
+  }
+
+  & h3 {
+    color: var(--color-info-800);
+    font-weight: var(--font-w-medium);
+    font-size: var(--font-s-body-1);
+
+    @media(min-width: 500) {
+      font-size: var(--font-h3);
+    }
+  }
+}
+
+.name {
+  text-align: center;
+}
+
+.about {
+  font-size: var(--font-s-body-2);
+  line-height: var(--line-height-body-2);
+  text-align: justify;
+  margin-top: var(--space-200);
+}
+
+.photo {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  padding: var(--space-100);
+
+  @media(min-width: 500) {
+    padding: var(--space-300);
+  }
+
+  & img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+
+    @media(min-width: 500) {
+      height: 200px;
+      width: 200px;
+    }
+  }
+}
