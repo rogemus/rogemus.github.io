@@ -2,11 +2,16 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Kacper Rogowski'
 theme = 'rogemus'
+description = 'Hi, I’m Kacper. And this is my website. You should totally check it out.'
 
 [params]
+title = 'Kacper Rogowski'
 description = 'Hi, I’m Kacper. And this is my website. You should totally check it out.'
 keywords = "front-end, frontend, developer, react, typescipt, javascript, html, css"
-images = []
+images = ["/cover.png"]
+
+[params.social]
+twitter = "rogemus"
 
 [params.author]
 name = "Kacper Rogowski"
