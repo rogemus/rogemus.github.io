@@ -1,0 +1,82 @@
+{{ with site.Params.links }}
+
+<section class="links">
+  <div class="grid">
+
+
+    {{ with .github }}
+      <a href="{{ .link }}" class="card">
+        <div class="card__icon">
+          {{ partial "icons/github" }}
+        </div>
+        <div class="card__label">
+          {{ .label }}
+        </div>
+      </a>
+    {{ end }}
+
+    {{ with .linkedin }}
+      <a href="{{ .link }}" class="card card--accent-1">
+        <div class="card__icon">
+          {{ partial "icons/linkedin" }}
+        </div>
+        <div class="card__label">
+          {{ .label }}
+        </div>
+      </a>
+    {{ end }}
+
+    {{ with .mail }}
+      <a href="mailto:{{ .link }}" class="card card--accent-2">
+        <div class="card__icon">
+          {{ partial "icons/envelope" }}
+        </div>
+        <div class="card__label">
+          {{ .label }}
+        </div>
+      </a>
+    {{ end }}
+
+    {{ with .resume }}
+      <a href="{{ .link }}" class="card card--accent-3">
+        <div class="card__icon">
+          {{ partial "icons/file" }}
+        </div>
+        <div class="card__label">
+          {{ .label }}
+        </div>
+      </a>
+    {{ end }}
+
+
+    <!---->
+    <!-- <a href="#" class="card card--accent-1"> -->
+    <!--   <div class="card__icon"> -->
+    <!--     🇵🇱 -->
+    <!--   </div> -->
+    <!--   <div class="card__label"> -->
+    <!--     Linkendin -->
+    <!--   </div> -->
+    <!-- </a> -->
+    <!---->
+    <!-- <a href="#" class="card card--accent-2"> -->
+    <!--   <div class="card__icon"> -->
+    <!--     🇵🇱 -->
+    <!--   </div> -->
+    <!--   <div class="card__label"> -->
+    <!--     E-Mail -->
+    <!--   </div> -->
+    <!-- </a> -->
+    <!---->
+    <!-- <a href="#" class="card card--accent-3"> -->
+    <!--   <div class="card__icon"> -->
+    <!--     🇵🇱 -->
+    <!--   </div> -->
+    <!--   <div class="card__label"> -->
+    <!--     CV / Resume -->
+    <!--   </div> -->
+    <!-- </a> -->
+    <!---->
+  </div>
+</section>
+{{ end }}

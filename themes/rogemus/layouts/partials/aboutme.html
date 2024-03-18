@@ -1,0 +1,14 @@
+{{ with site.Params.Aboutme }}
+
+<section class="about-me">
+  <div class="photo">
+    <img src="{{ .avatar }}" alt="An image">
+  </div>
+  <div class="name">
+    <h1>{{ .name }}</h1>
+    <h3>{{ .position }}</h3>
+  </div>
+  <div class="about">{{ .about | markdownify }}</div>
+</section>
+
+{{ end }}

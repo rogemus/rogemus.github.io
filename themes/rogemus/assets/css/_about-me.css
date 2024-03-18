@@ -1,19 +1,19 @@
 .about-me {
   & h1 {
-    color: var(--color-primary-600);
+    color: var(--color-info-800);
 
-    @media(min-width: 500) {
+    @media screen and (min-width: 500px) {
       font-size: var(--font-s-display);
       line-height: var(--line-height-display);
     }
   }
 
   & h3 {
-    color: var(--color-info-800);
+    color: var(--color-info-600);
     font-weight: var(--font-w-medium);
     font-size: var(--font-s-body-1);
 
-    @media(min-width: 500) {
+    @media screen and (min-width: 500px) {
       font-size: var(--font-h3);
     }
   }
@@ -36,7 +36,7 @@
   justify-content: center;
   padding: var(--space-100);
 
-  @media(min-width: 500) {
+  @media screen and (min-width: 500px) {
     padding: var(--space-300);
   }
 
@@ -45,7 +45,7 @@
     height: 100px;
     width: 100px;
 
-    @media(min-width: 500) {
+    @media screen and (min-width: 500px) {
       height: 200px;
       width: 200px;
     }
