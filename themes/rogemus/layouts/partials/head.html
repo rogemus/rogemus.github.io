@@ -9,7 +9,7 @@
 
 {{ $opts := dict "noMap" true "inlineImports" true}}
 {{ with resources.Get "css/styles.css" | postCSS $opts }}
-<link rel="stylesheet" href="{{ .RelPermalink }}">
+<link rel="stylesheet" href="{{ .RelPermalink }}?{{ now.Unix }}">
 {{ end }}
 
 {{ template "_internal/twitter_cards.html" . }}
