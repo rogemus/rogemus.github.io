@@ -1,0 +1,44 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Kacper Rogowski'
+theme = 'rogemus'
+
+[params]
+description = 'Hi, I’m Kacper. And this is my website. You should totally check it out.'
+keywords = "front-end, frontend, developer, react, typescipt, javascript, html, css"
+images = []
+
+[params.author]
+name = "Kacper Rogowski"
+homepage = "https://www.krogowski.dev/"
+
+[params.aboutme]
+name = 'Kacper Rogowski'
+position = 'Front-end Developer'
+about = """
+Experienced **React** and **Javascript**, **Typescript** developer with strong frontend skills.
+Skilled in team management, creating detailed requirements, prepering complext technical solution and adapting to new technologies.
+Ambitious to evolve into a Full Stack Developer. Committed to success with a mindset of "everything is possible, it's just a matter of when".
+"""
+avatar = 'https://media.licdn.com/dms/image/D4E03AQH5PNwmx-lxhg/profile-displayphoto-shrink_800_800/0/1707856237424?e=1716422400&v=beta&t=5vv_XYifqJ-S0uqWTRsVx2GzE6F7hh9E4yeQ_sD525U'
+
+[params.links.github]
+disabled = false
+label = "GitHub"
+link = "https://github.com/rogemus"
+
+[params.links.linkedin]
+disabled = false
+label = "Linkedin"
+link = "https://www.linkedin.com/in/kacper-rogowski/"
+
+[params.links.resume]
+disabled = false
+label = "CV / Resume"
+link = "https://1drv.ms/b/s!AjQ5YYWM-rh3sZtRjWIkcp-7T39JPA?e=ElTZbd"
+
+[params.links.mail]
+disabled = false
+label = "E-mail"
+link = "kacper.rogowski@outlook.com"
+

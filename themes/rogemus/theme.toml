@@ -1,0 +1,12 @@
+name = "Rogemus Personal Theme"
+license = "MIT"
+licenselink = ""
+description = ""
+homepage = ""
+tags = []
+features = []
+min_version = "0.84.0"
+
+[params.author]
+  name = "Kacper Rogowski"
+  homepage = "https://www.krogowski.dev/"

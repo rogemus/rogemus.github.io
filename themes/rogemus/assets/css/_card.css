@@ -9,7 +9,7 @@
   transition: background 200ms;
   padding: var(--space-200);
 
-  @media(min-width: 500px) {
+  @media screen and (min-width: 500px) {
     padding: var(--space-300);
   }
 
@@ -44,10 +44,15 @@
     margin-right: var(--space-300);
     border-radius: var(--border-r-100);
     background: var(--color-neutral-800);
-    color: var(--color-white);
+
+    & svg {
+      fill: var(--color-white);
+      height: 32px;
+      width: 32px;
+    }
   }
 
   & .card__label {
-    margin: 0;
+    font-weight: var(--font-w-medium);
   }
 }

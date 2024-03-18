@@ -4,7 +4,7 @@
   justify-content: center;
   padding: var(--space-300) 0;
 
-  @media(min-width: 500) {
+  @media screen and (min-width: 500px) {
     padding: 0;
   }
 }
@@ -14,7 +14,7 @@
   flex-direction: column;
   gap: var(--space-200);
 
-  @media(min-width: 500px) {
+  @media screen and (min-width: 500px) {
     display: grid;
     gap: var(--space-300);
     grid-template-columns: repeat(2, 1fr);

@@ -1,8 +1,7 @@
 :root {
   /* Size */
   --size-wrapper: 1000px;
-  --size-left: 70%;
-  --size-right: 100%;
+  --size-left: 45%;
 
   /* Colors */
   --color-white: #ffffff;
