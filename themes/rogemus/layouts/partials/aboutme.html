@@ -1,14 +1,18 @@
 {{ with site.Params.Aboutme }}
 
 <section class="about-me">
-  <div class="photo">
-    <img src="{{ .avatar }}" alt="An image">
-  </div>
-  <div class="name">
+  <header class="name">
     <h1>{{ .name }}</h1>
-    <h3>{{ .position }}</h3>
-  </div>
+    <h2>{{ .position }}</h2>
+  </header>
   <div class="about">{{ .about | markdownify }}</div>
+  <div class="location">
+    <span class="location__icon">
+      {{ partial "icons/mappin" }}
+    </span>
+    <span> Poznań, PL
+  </div>
+
 </section>
 
 {{ end }}

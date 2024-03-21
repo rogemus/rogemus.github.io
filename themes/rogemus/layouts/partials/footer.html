@@ -1,0 +1,10 @@
+<footer>
+  &copy; <span id="currentYear"></span> Kacper Rogowski
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    var currentYear = new Date().getFullYear();
+    document.getElementById('currentYear').textContent = currentYear;
+  });
+</script>

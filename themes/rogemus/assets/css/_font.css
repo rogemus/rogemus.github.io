@@ -4,3 +4,11 @@
     local("Inter"),
     url("/fonts/Inter.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "DM Mono";
+  src:
+    local("DM Mono"),
+    url("/fonts/DMMono-Regular.ttf") format("truetype");
+  font-weight: 400;
+}

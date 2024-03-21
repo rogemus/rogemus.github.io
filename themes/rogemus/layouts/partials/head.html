@@ -5,7 +5,7 @@
 <meta name="keywords" content="{{ .Site.Params.keywords }}" />
 
 <title>{{.Site.Title}}</title>
-<link rel="icon" type="image/x-icon" href="{{ .Permalink }}/favicon.ico">
+<link rel="icon" type="image/x-icon" href="{{ .Permalink }}favicon.ico">
 
 {{ $opts := dict "noMap" true "inlineImports" true}}
 {{ with resources.Get "css/styles.css" | postCSS $opts }}
