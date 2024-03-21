@@ -9,7 +9,7 @@ body {
   margin: 0;
   font-family: var(--font-f-dmmono);
   background: var(--color-neutral-800);
-  color: var(--color-neutral-50);
+  color: var(--color-neutral-500);
   scroll-behavior: smooth;
 }
 
@@ -17,7 +17,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   padding: var(--space-500) 0;
 }
 
@@ -43,6 +42,8 @@ h4 {
   margin-bottom: var(--space-100);
   font-family: var(--font-f-inter);
   margin-bottom: var(--space-200);
+  transform: skewX(-10deg);
+  color: var(--color-neutral-50)
 }
 
 h1 {
@@ -80,5 +81,5 @@ a {
 }
 
 section {
-  margin-bottom: var(--space-400)
+  margin-bottom: var(--space-500)
 }
