@@ -11,6 +11,18 @@
   </main>
 
   {{ partial "footer" }}
+
+
+  <canvas id="ducks"></canvas>
+  <div style="display: none;">
+    <img id="duck" src="duck.png" height="65" width="80">
+  </div>
+
+  {{ $opts := dict "minify" true }}
+  {{ with resources.Get "js/ducks.js" | js.Build $opts }}
+    <script src="{{ .RelPermalink}}"></script>
+  {{ end }}
+
 </body>
 
 </html>
