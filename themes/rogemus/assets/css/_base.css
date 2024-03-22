@@ -27,6 +27,7 @@ footer {
   max-width: var(--size-wrapper);
   position: relative;
   z-index: 100;
+  padding: 0 var(--space-200);
 }
 
 canvas {
@@ -58,8 +59,12 @@ h4 {
 
 h1 {
   font-weight: var(--font-w-bold);
-  font-size: var(--font-s-h1);
+  font-size: var(--font-s-h2);
   line-height: var(--line-height-h1);
+
+  @media screen and (min-width: 450px) {
+    font-size: var(--font-s-h1);
+  }
 }
 
 h2 {

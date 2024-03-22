@@ -6,7 +6,7 @@ const config = {
   windowBufforBottom: 250,
   maxNumberOfDucks: 50,
   newDucksInterval: 6 * 1000,
-  newDucksCount: 5,
+  newDucksCount: 7,
 }
 
 const $canvas = document.getElementById('ducks');
@@ -60,9 +60,16 @@ const step = (now) => {
   requestAnimationFrame(step);
 };
 
-requestAnimationFrame((ts) => {
-  ducks = createDucks(config.newDucksCount);
-  console.log('🐤 🐤 🐤 🐤 🐤 🐤 🐤 🐤 🐤 🐤 🐤 🐤 🐤')
-  step(ts);
-})
+const ducksAnimation = () => {
+  requestAnimationFrame((ts) => {
+    ducks = createDucks(config.newDucksCount);
+    console.log('🐤 🐤 🐤 🐤 🐤 🐤 🐤 🐤 🐤 🐤 🐤 🐤 🐤')
+    step(ts);
+  });
+}
 
+window.onload = () => {
+  if (window.innerWidth >= 500) {
+    ducksAnimation();
+  }
+}
