@@ -2,7 +2,10 @@
   padding: 0;
   margin-bottom: 0;
   list-style: none;
-  columns: 2;
+
+  @media screen and (min-width: 450px) {
+    columns: 2;
+  }
 }
 
 .stack__item {
