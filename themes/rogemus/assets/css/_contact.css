@@ -16,7 +16,8 @@
     height: 1px;
     width: 100%;
     margin: 0 var(--space-200);
-    background: var(--color-neutral-600);
+    border-top: 1px dashed var(--color-neutral-600);
+    margin-bottom: -1px;
   }
 }
 
