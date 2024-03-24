@@ -1,76 +1,100 @@
 * {
   box-sizing: border-box;
+  line-height: var(--line-height-body)
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
-  color: var(--color-neutral-800);
-  font-family: var(--font-f-inter);
-  font-size: var(--font-s-body-1);
-  line-height: var(--line-height-body-1);
-  background: var(--color-neutral-50);
-  padding: var(--space-100);
-
-  @media(min-width: 500px) {
-    overflow: hidden;
-    height: 100vh;
-  }
+  font-family: var(--font-f-dmmono);
+  background: var(--color-neutral-800);
+  color: var(--color-neutral-500);
+  scroll-behavior: smooth;
 }
 
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: var(--space-500) 0;
+}
+
+main,
+footer {
+  margin: 0 auto;
+  width: 100%;
+  max-width: var(--size-wrapper);
+  position: relative;
+  z-index: 100;
+  padding: 0 var(--space-200);
+}
+
+canvas {
+  position: fixed;
+  top: -250px;
+  left: 0;
+  z-index: 10;
+  opacity: 20%;
+}
+
+footer {
+  font-size: var(--font-s-xs-caption);
+  color: var(--color-neutral-600);
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-weight: var(--font-w-semibold);
   padding: 0;
   margin: 0;
+  font-weight: var(--font-w-semibold);
   margin-bottom: var(--space-100);
+  font-family: var(--font-f-inter);
+  margin-bottom: var(--space-200);
+  transform: skewX(-10deg);
+  color: var(--color-neutral-50)
 }
 
 h1 {
+  font-weight: var(--font-w-bold);
   font-size: var(--font-s-h2);
-  line-height: var(--line-height-h2);
+  line-height: var(--line-height-h1);
 
-  @media screen and (min-width: 500px) {
+  @media screen and (min-width: 450px) {
     font-size: var(--font-s-h1);
-    line-height: var(--line-height-h1);
   }
 }
 
 h2 {
-  font-size: var(--font-s-h3);
-  line-height: var(--line-height-h3);
-
-  @media screen and (min-width: 500px) {
-    font-size: var(--font-s-h2);
-    line-height: var(--line-height-h2);
-  }
+  font-size: var(--font-s-h2);
+  line-height: var(--line-height-h2);
 }
 
 h3 {
-  font-size: var(--font-s-h4);
-  line-height: var(--line-height-h4);
-
-  @media screen and (min-width: 500px) {
-    font-size: var(--font-s-h3);
-    line-height: var(--line-height-h3);
-  }
+  font-size: var(--font-s-h3);
+  line-height: var(--line-height-h3);
 }
 
 h4 {
-  font-size: var(--font-s-body-1);
-  line-height: var(--line-height-body-1);
+  line-height: var(--line-height-h4);
+  font-size: var(--font-s-h4);
+}
 
-  @media screen and (min-width: 500px) {
-    font-size: var(--font-s-h4);
-    line-height: var(--line-height-h4);
+p {
+  line-height: var(--line-height-body)
+}
+
+a {
+  color: var(--color-neutral-100);
+
+  &:hover {
+    color: var(--color-accent-500);
+    text-decoration: underline;
   }
+}
+
+section {
+  margin-bottom: var(--space-500)
 }

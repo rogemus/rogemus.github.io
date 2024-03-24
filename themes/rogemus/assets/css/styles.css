@@ -1,7 +1,8 @@
 @import "./_vars.css";
 @import "./_font.css";
 @import "./_base.css";
-@import "./_main.css";
+@import "./_contact.css";
 @import "./_about-me.css";
-@import "./_links.css";
-@import "./_card.css";
+@import "./_menu.css";
+@import "./_stack.css";
+@import "./_scrolltop.css";

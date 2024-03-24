@@ -1,0 +1,25 @@
+.main-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu__item {
+  margin-bottom: var(--space-100);
+}
+
+.main-menu__link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.main-menu__link__icon {
+  margin-right: var(--space-100);
+  margin-bottom: -2px;
+
+  & svg {
+    max-width: 16px;
+    height: auto;
+  }
+}

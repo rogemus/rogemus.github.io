@@ -7,7 +7,6 @@
     {{ with .github }}
       <a href="{{ .link }}" class="card">
         <div class="card__icon">
-          {{ partial "icons/github" }}
         </div>
         <div class="card__label">
           {{ .label }}
@@ -18,7 +17,6 @@
     {{ with .linkedin }}
       <a href="{{ .link }}" class="card card--accent-1">
         <div class="card__icon">
-          {{ partial "icons/linkedin" }}
         </div>
         <div class="card__label">
           {{ .label }}
@@ -29,7 +27,6 @@
     {{ with .mail }}
       <a href="mailto:{{ .link }}" class="card card--accent-2">
         <div class="card__icon">
-          {{ partial "icons/envelope" }}
         </div>
         <div class="card__label">
           {{ .label }}
@@ -40,7 +37,6 @@
     {{ with .resume }}
       <a href="{{ .link }}" class="card card--accent-3">
         <div class="card__icon">
-          {{ partial "icons/file" }}
         </div>
         <div class="card__label">
           {{ .label }}
