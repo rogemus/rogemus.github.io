@@ -45,7 +45,9 @@
   border-radius: var(--border-r-200);
 
   & svg {
-    max-width: 28px;
+    height: 100%;
+    width: 100%;
+    max-width: 24px;
     color: var(--color-neutral-800)
   }
 }

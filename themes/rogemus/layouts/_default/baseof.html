@@ -20,7 +20,7 @@
 
   {{ $opts := dict "minify" true }}
   {{ with resources.Get "js/ducks.js" | js.Build $opts }}
-    <script src="{{ .RelPermalink}}"></script>
+    <script defer src="{{ .RelPermalink}}"></script>
   {{ end }}
 
   {{ partial "analytics" }}

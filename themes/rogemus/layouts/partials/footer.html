@@ -4,7 +4,8 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    var currentYear = new Date().getFullYear();
-    document.getElementById('currentYear').textContent = currentYear;
+    const $spanYear = document.getElementById('currentYear');
+    const currentYear = new Date().getFullYear();
+    $spanYear.textContent = currentYear;
   });
 </script>

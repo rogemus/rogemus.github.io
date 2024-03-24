@@ -68,8 +68,8 @@ const ducksAnimation = () => {
   });
 }
 
-window.onload = () => {
+window.addEventListener("load", () => {
   if (window.innerWidth >= 500) {
     ducksAnimation();
   }
-}
+});
