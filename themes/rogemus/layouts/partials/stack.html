@@ -3,135 +3,27 @@
     <h3>Stack</h3>
   </header>
 
+  {{ with site.Params.Stack }}
   <ul class="stack">
+    {{ range(sort . "order" ) }}
     <li class="stack__item">
-      <a href="https://react.dev" class="stack__link">
+      <a data-umami-event="Stack link" data-umami-event-link="{{ .name }}" href="{{ .link }}" class="stack__link">
         <div class="stack__icon">
-          {{ partial "icons/react"}}
+          {{ partial .icon }}
         </div>
         <div class="stack__labels">
           <span class="stack__title">
-            React
+            {{ .title }}
           </span>
           <span class="stack__subtitle">
-            Frontend lib
+            {{ .subtitle }}
           </span>
         </div>
       </a>
     </li>
-
-    <li class="stack__item">
-      <a href="https://www.typescriptlang.org" class="stack__link">
-        <div class="stack__icon">
-          {{ partial "icons/ts"}}
-        </div>
-        <div class="stack_labels">
-          <span class="stack__title">
-            TypeScript
-          </span>
-          <span class="stack__subtitle">
-            Programing language
-          </span>
-        </div>
-      </a>
-    </li>
-
-    <li class="stack__item">
-      <a href="https://go.dev" class="stack__link">
-        <div class="stack__icon">
-          {{ partial "icons/golang"}}
-        </div>
-        <div class="stack__labels">
-          <span class="stack__title">
-            Go
-          </span>
-          <span class="stack__subtitle">
-            Programing language
-          </span>
-        </div>
-      </a>
-    </li>
-
-    <li class="stack__item">
-      <a href="https://redux.js.org" class="stack__link">
-        <div class="stack__icon">
-          {{ partial "icons/database"}}
-        </div>
-        <div class="stack__labels">
-          <span class="stack__title">
-            Redux
-          </span>
-          <span class="stack__subtitle">
-            State Container
-          </span>
-        </div>
-      </a>
-    </li>
-
-    <li class="stack__item">
-      <a href="https://github.com/rogemus" class="stack__link">
-        <div class="stack__icon">
-          {{ partial "icons/github"}}
-        </div>
-        <div class="stack__labels">
-          <span class="stack__title">
-            Github
-          </span>
-          <span class="stack__subtitle">
-            Dev Tool
-          </span>
-        </div>
-      </a>
-    </li>
-
-    <li class="stack__item">
-      <a href="https://www.figma.com" class="stack__link">
-        <div class="stack__icon">
-          {{ partial "icons/figma"}}
-        </div>
-        <div class="stack__labels">
-          <span class="stack__title">
-            Figma
-          </span>
-          <span class="stack__subtitle">
-            Design Tool
-          </span>
-        </div>
-      </a>
-    </li>
-
-    <li class="stack__item">
-      <a href="#" class="stack__link">
-        <div class="stack__icon">
-          {{ partial "icons/code"}}
-        </div>
-        <div class="stack__labels">
-          <span class="stack__title">
-            NeoVim
-          </span>
-          <span class="stack__subtitle">
-            Code Editor
-          </span>
-        </div>
-      </a>
-    </li>
-
-    <li class="stack__item">
-      <a href="https://open.spotify.com/playlist/6qSiFruC3xCtHqra1SvGj0?si=52d4d3c6523145e3" class="stack__link">
-        <div class="stack__icon">
-          {{ partial "icons/spotify"}}
-        </div>
-        <div class="stack__labels">
-          <span class="stack__title">
-            Spotify
-          </span>
-          <span class="stack__subtitle">
-            Music for coding
-          </span>
-        </div>
-      </a>
-    </li>
+    {{ end }}
   </ul>
+  {{ end }}
 </section>
 
 {{ partial "scrolltop" }}

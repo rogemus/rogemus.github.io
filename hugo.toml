@@ -25,25 +25,121 @@ Experienced **React** and **Javascript**, **Typescript** developer with strong f
 Skilled in team management, creating detailed requirements, prepering complext technical solution and adapting to new technologies.
 Ambitious to evolve into a Full Stack Developer. Committed to success with a mindset of "everything is possible, it's just a matter of when".
 """
-avatar = 'https://media.licdn.com/dms/image/D4E03AQH5PNwmx-lxhg/profile-displayphoto-shrink_800_800/0/1707856237424?e=1716422400&v=beta&t=5vv_XYifqJ-S0uqWTRsVx2GzE6F7hh9E4yeQ_sD525U'
 
-[params.links.github]
-disabled = false
-label = "GitHub"
-link = "https://github.com/rogemus"
-
-[params.links.linkedin]
-disabled = false
-label = "Linkedin"
-link = "https://www.linkedin.com/in/kacper-rogowski/"
-
-[params.links.resume]
-disabled = false
-label = "CV / Resume"
+[params.menu]
+[params.menu.resume]
+title = "CV / Resume"
+name = "resume"
 link = "https://1drv.ms/b/s!AjQ5YYWM-rh3sZtRjWIkcp-7T39JPA?e=ElTZbd"
+icon = "icons/zap"
+order = 1
 
-[params.links.mail]
-disabled = false
-label = "E-mail"
-link = "kacper.rogowski@outlook.com"
+[params.menu.stack]
+title = "Stack"
+name = "stack"
+link = "#stack"
+icon = "icons/layers"
+order = 2
+
+[params.menu.contact]
+title = "Contact"
+name = "contact"
+link = "#contact"
+icon = "icons/atsign"
+order = 3
+
+
+[params.contact]
+[params.contact.resume]
+title = "CV / Resume"
+label = "@onedrive"
+name = "resume"
+link = "https://1drv.ms/b/s!AjQ5YYWM-rh3sZtRjWIkcp-7T39JPA?e=ElTZbd"
+order = 1
+
+[params.contact.linkedin]
+title = "Linkedin"
+label = "@kacper-rogowski"
+name = "linkedin"
+link = "https://www.linkedin.com/in/kacper-rogowski/"
+order = 2
+
+[params.contact.mail]
+title = "Email"
+label = "kacper-rogowski@outlook.com"
+name = "mail"
+link = "mailto:kacper.rogowski@outlook.com"
+order = 3
+
+[params.contact.github]
+title = "Github"
+label = "@rogemus"
+name = "github"
+link = "https://github.com/rogemus"
+order = 4
+
+[params.stack]
+[params.stack.react]
+icon = "icons/react"
+name = "react"
+link = ""
+title = "React"
+subtitle = "Frontend lib"
+order = 1
+
+[params.stack.ts]
+icon = "icons/ts"
+name = "typescipt"
+link = "https://www.typescriptlang.org"
+title = "TypeScript"
+subtitle = "Programing language"
+order = 2
+
+[params.stack.redux]
+icon = "icons/database"
+name = "redux"
+link = "https://redux.js.org"
+title = "Redux"
+subtitle ="State Container"
+order = 3
+
+[params.stack.go]
+icon = "icons/golang"
+name = "go"
+link = "https://go.dev"
+title = "Go"
+subtitle = "Programing language"
+order = 4
+
+[params.stack.github]
+icon = "icons/github"
+name = "github"
+link = "https://github.com/rogemus"
+title = "Github"
+subtitle = "Dev Tool"
+order = 5
+
+[params.stack.figma]
+icon = "icons/figma"
+name = "figma"
+link = "https://www.figma.com"
+title = "Figma"
+subtitle = "Design Tool"
+order = 6
+
+[params.stack.neovim]
+icon = "icons/code"
+name = "neovim"
+link = "https://neovim.io/"
+title = "NeoVim"
+subtitle = "Code Editor"
+order = 7
+
+[params.stack.spotify]
+icon = "icons/spotify"
+name = "spotify"
+link = "https://open.spotify.com/playlist/6qSiFruC3xCtHqra1SvGj0?si=52d4d3c6523145e3"
+title = "Spotify"
+subtitle = "Music for coding"
+order = 8
 

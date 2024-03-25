@@ -1,28 +1,18 @@
-<nav>
+<nav id="menu">
+
+  {{ with site.Params.Menu }}
   <ul class="main-menu">
+    {{ range(sort . "order" ) }}
     <li class="main-menu__item">
-      <a class="main-menu__link" href="https://1drv.ms/b/s!AjQ5YYWM-rh3sZtRjWIkcp-7T39JPA?e=ElTZbd">
+      <a data-unami-event="Menu link" data-unami-event-link="{{ .name }}" class="main-menu__link"
+        href="{{ .link }}">
         <span class="main-menu__link__icon">
-          {{ partial "icons/zap"}}
+          {{ partial .icon }}
         </span>
-        Resume
+        {{ .title }}
       </a>
     </li>
-    <li class="main-menu__item">
-      <a class="main-menu__link" href="#stack">
-        <span class="main-menu__link__icon">
-          {{ partial "icons/layers"}}
-        </span>
-        Stack
-      </a>
-    </li>
-    <li class="main-menu__item">
-      <a class="main-menu__link" href="#contact">
-        <span class="main-menu__link__icon">
-          {{ partial "icons/atsign" }}
-        </span>
-        Contact
-      </a>
-    </li>
+    {{ end }}
   </ul>
+  {{ end }}
 </nav>

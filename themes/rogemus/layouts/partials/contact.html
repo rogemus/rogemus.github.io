@@ -3,40 +3,23 @@
     <h3>Contact</h3>
   </header>
 
+  {{ with site.Params.Contact }}
+
   <ul class="contact-list">
+    {{ range (sort . "order ")}}
     <li class="contact-list__item">
       <span class="contact-list__item__label">
-        Email
+        {{ .title }}
       </span>
-      <a href="#" class="contact-list__item__link">
-        rogemus@gmail.com
+      <a data-unami-event-link="{{ .name }}" data-unami-event="Contact link" href="{{ .link }}"
+        class="contact-list__item__link">
+        {{ .label }}
       </a>
     </li>
-    <li class="contact-list__item">
-      <span class="contact-list__item__label">
-        Resume
-      </span>
-      <a href="https://1drv.ms/b/s!AjQ5YYWM-rh3sZtRjWIkcp-7T39JPA?e=ElTZbd" class="contact-list__item__link">
-        @onedrive
-      </a>
-    </li>
-    <li class="contact-list__item">
-      <span class="contact-list__item__label">
-        Linkedin
-      </span>
-      <a href="#" class="contact-list__item__link">
-       @kacper-rogowski 
-      </a>
-    </li>
-    <li class="contact-list__item">
-      <span class="contact-list__item__label">
-        Github
-      </span>
-      <a href="#" class="contact-list__item__link">
-        @rogemus
-      </a>
-    </li>
+    {{ end }}
   </ul>
+
+  {{ end }}
 </section>
 
 {{ partial "scrolltop" }}

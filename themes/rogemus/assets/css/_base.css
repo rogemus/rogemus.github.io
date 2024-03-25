@@ -40,7 +40,7 @@ canvas {
 
 footer {
   font-size: var(--font-s-xs-caption);
-  color: var(--color-neutral-600);
+  color: var(--color-neutral-200);
 }
 
 h1,

@@ -24,7 +24,7 @@
 .contact-list__item__label {
   color: var(--color-neutral-100);
   order: 1;
-
+  white-space: nowrap;
 }
 
 .contact-list__item__link {
