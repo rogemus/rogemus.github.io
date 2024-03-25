@@ -4,7 +4,7 @@
   <ul class="main-menu">
     {{ range(sort . "order" ) }}
     <li class="main-menu__item">
-      <a data-unami-event="Menu link" data-unami-event-link="{{ .name }}" class="main-menu__link"
+      <a data-umami-event="Menu link" data-umami-event-link="{{ .name }}" class="main-menu__link"
         href="{{ .link }}">
         <span class="main-menu__link__icon">
           {{ partial .icon }}
