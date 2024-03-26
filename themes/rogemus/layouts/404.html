@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+<section class="e404">
+  <header>
+    <h1 class="e404__title">404</h1>
+  </header>
+
+  <div class="e404__msg">
+    <p>We’ve looked everywhere and can’t find the page you’re looking for.</p>
+    <div class="e404__footer">
+      <a href="{{ "" | relURL }}">Back to Homepage</a>
+    </div>
+  </div>
+</section>
+
+
+{{ partial "scrolltop" }}
+
+{{ end }}

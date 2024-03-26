@@ -53,7 +53,7 @@ h4 {
   font-family: var(--font-f-inter);
   margin-bottom: var(--space-200);
   transform: skewX(-10deg);
-  color: var(--color-neutral-50)
+  color: var(--color-neutral-50);
 }
 
 h1 {
@@ -94,6 +94,7 @@ a {
   }
 }
 
-section, nav {
+section,
+nav {
   margin-bottom: var(--space-500)
 }
