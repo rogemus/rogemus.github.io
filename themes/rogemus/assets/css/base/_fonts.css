@@ -1,0 +1,6 @@
+@font-face {
+  font-family: "DM Mono";
+  src:
+    local("DM Mono"),
+    src("/fonts/DMMono-Regular.ttf") format("truetype");
+}
