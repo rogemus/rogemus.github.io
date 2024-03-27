@@ -1,0 +1,13 @@
+.text-with-icon {
+  align-items: center;
+  display: flex;
+
+  >span {
+    margin-right: var(--space-200);
+    display: flex;
+  }
+
+  svg {
+    max-width: 16px;
+  }
+}

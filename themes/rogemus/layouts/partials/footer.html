@@ -1,11 +1,4 @@
-<footer>
-  &copy; <span id="currentYear"></span> Kacper Rogowski
-</footer>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const $spanYear = document.getElementById('currentYear');
-    const currentYear = new Date().getFullYear();
-    $spanYear.textContent = currentYear;
-  });
-</script>
+{{ partial "scrolltop" }}
+<small>
+  &copy; {{ time.Now.Year }} Kacper Rogowski
+</small>

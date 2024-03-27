@@ -1,8 +1,14 @@
-{{ define "main" }}
+{{ define "header" }}
+  {{ with site.Params.Aboutme }}
+    <h1>{{ .name }}</h1>
+    <h2>{{ .position }}</h2>
+  {{ end }}
+{{ end }}
 
-  {{ partial "aboutme" }}
+{{ define "main" }}
+  {{ partial "about" }}
   {{ partial "menu" }}
   {{ partial "stack" }}
   {{ partial "contact" }}
-
 {{ end }}
+

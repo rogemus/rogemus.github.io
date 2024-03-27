@@ -1,0 +1,5 @@
+#about {
+  .text-with-icon {
+    margin: var(--space-400) 0;
+  }
+}

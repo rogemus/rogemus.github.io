@@ -8,7 +8,6 @@
   --color-neutral-600: #404143;
   --color-neutral-500: #a1a1aa;
   --color-neutral-100: #f5f5f7;
-  --color-neutral-50: #fefefe;
   --color-neutral-0: #ffffff;
 
   /* Colors: accents */
@@ -21,8 +20,10 @@
   --border-r-200: 4px;
 
   /* Font Family*/
-  --font-f-inter: "Inter", sans-serif;
-  --font-f-dmmono: "DM Mono", monospace;
+  --font-f-helvetica: "Helvetica";
+  --font-f-mono-mac: "Monaco";
+  --font-f-mono-win: "Andale Mono";
+  --font-f-mono-win-2: "Consolas";
 
   /* Font Weight */
   --font-w-bold: 700;
@@ -32,9 +33,9 @@
 
   /* Font Size */
   --font-s-h1: 48px;
-  --font-s-h2: 28px;
-  --font-s-h3: 24px;
-  --font-s-h4: 20px;
+  --font-s-h2: 32px;
+  --font-s-h3: 26px;
+  --font-s-h4: 18px;
   --font-s-body: 16px;
   --font-s-caption: 14px;
   --font-s-xs-caption: 12px;

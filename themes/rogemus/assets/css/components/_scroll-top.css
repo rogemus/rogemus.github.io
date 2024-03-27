@@ -1,0 +1,17 @@
+.scroll-top {
+  border-bottom: 1px solid var(--color-neutral-700);
+  margin-bottom: var(--space-400);
+  text-align: right;
+
+  a {
+    color: var(--color-neutral-700);
+
+    &:hover {
+      color: var(--color-accent-500);
+    }
+  }
+
+  svg {
+    max-width: 20px;
+  }
+}

@@ -4,6 +4,10 @@ title = 'Kacper Rogowski'
 theme = 'rogemus'
 description = 'Hi, I’m Kacper. And this is my website. You should totally check it out.'
 
+[markup]
+[markup.highlight]
+lineNos = true
+
 [params]
 title = 'Kacper Rogowski'
 description = 'Hi, I’m Kacper. And this is my website. You should totally check it out.'
@@ -23,7 +27,7 @@ position = 'Front-end Developer'
 about = """
 Experienced **React** and **Javascript**, **Typescript** developer with strong frontend skills.
 Skilled in team management, creating detailed requirements, prepering complext technical solution and adapting to new technologies.
-Ambitious to evolve into a Full Stack Developer. Committed to success with a mindset of "everything is possible, it's just a matter of when".
+Ambitious to evolve into a Full Stack Developer. Committed to success with a mindset of "_everything is possible, it's just a matter of when_".
 """
 
 [params.menu]
