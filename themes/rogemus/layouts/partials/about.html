@@ -1,0 +1,13 @@
+{{ with site.Params.Aboutme }}
+
+<section id="about">
+  <p>{{ .about | markdownify }}</p>
+  <div class="text-with-icon">
+    <span>
+      {{ partial "icons/mappin" }}
+    </span>
+    <span>Poznań, PL</span>
+  </div>
+</section>
+
+{{ end }}

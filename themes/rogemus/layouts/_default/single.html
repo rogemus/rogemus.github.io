@@ -1,0 +1,25 @@
+{{ define "main" }}
+
+<header>
+  <h1>{{ .Title }}</h1>
+
+  <figure>
+
+  </figure>
+
+</header>
+
+
+
+<section>
+  {{ .TableOfContents }}
+</section>
+
+<article>
+  <div>
+    {{ .Content }}
+  </div>
+</article>
+
+{{ partial "scrolltop" }}
+{{ end }}

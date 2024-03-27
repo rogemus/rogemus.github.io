@@ -1,9 +1,21 @@
-@import "./_vars.css";
-@import "./_font.css";
-@import "./_base.css";
-@import "./_contact.css";
-@import "./_about-me.css";
-@import "./_menu.css";
-@import "./_stack.css";
-@import "./_scrolltop.css";
-@import "./_404.css";
+@import "./base/_vars.css";
+@import "./base/_canvas.css";
+/* @import "./base/_code.css"; */
+@import "./base/_divider.css";
+@import "./base/_font.css";
+@import "./base/_img.css";
+@import "./base/_link.css";
+@import "./base/_list.css";
+@import "./base/_sections.css";
+@import "./base/_typography.css";
+
+@import "./components/_contact-list.css";
+@import "./components/_stack.css";
+@import "./components/_scroll-top.css";
+@import "./components/_404.css";
+
+@import "./components/_text-with-icon.css";
+@import "./components/_box-icon.css";
+@import "./components/_labels-stack.css";
+
+@import "./layouts/_index.css";

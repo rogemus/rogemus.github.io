@@ -1,0 +1,19 @@
+.stack {
+  @media screen and (min-width: 450px) {
+    columns: 2;
+  }
+
+  a {
+    padding: var(--space-100);
+    border-radius: var(--border-r-200);
+
+    &:hover {
+      background: var(--color-neutral-700);
+      text-decoration: none;
+    }
+  }
+
+  .text-with-icon svg {
+    max-width: 24px;
+  }
+}

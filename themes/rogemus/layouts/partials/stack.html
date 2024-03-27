@@ -1,29 +1,35 @@
+{{ with site.Params.Stack }}
 <section id="stack">
+
   <header>
     <h3>Stack</h3>
   </header>
 
-  {{ with site.Params.Stack }}
-  <ul class="stack">
+  <ul class="stack no-padding no-style">
     {{ range(sort . "order" ) }}
-    <li class="stack__item">
-      <a data-umami-event="Stack link" data-umami-event-link="{{ .name }}" href="{{ .link }}" class="stack__link">
-        <div class="stack__icon">
+
+    <li>
+      <a data-umami-event="Stack link" data-umami-event-link="{{ .name }}" href="{{ .link }}" class="text-with-icon no-decoration">
+
+        <span class="box-icon">
           {{ partial .icon }}
-        </div>
-        <div class="stack__labels">
-          <span class="stack__title">
-            {{ .title }}
+        </span>
+
+        <div class="labels-stack">
+          <span>
+            {{- .title -}}
           </span>
-          <span class="stack__subtitle">
-            {{ .subtitle }}
+          <span>
+            {{- .subtitle -}}
           </span>
         </div>
+
       </a>
     </li>
+
     {{ end }}
   </ul>
-  {{ end }}
 </section>
 
+{{ end }}
 {{ partial "scrolltop" }}

@@ -1,0 +1,14 @@
+ul {
+  &.no-padding {
+    margin: 0;
+    padding: 0;
+  }
+
+  &.no-style {
+    list-style: none;
+  }
+}
+
+li {
+  margin-bottom: var(--space-100);
+}

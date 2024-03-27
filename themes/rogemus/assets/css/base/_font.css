@@ -10,5 +10,4 @@
   src:
     local("DM Mono"),
     url("/fonts/DMMono-Regular.ttf") format("truetype");
-  font-weight: 400;
 }

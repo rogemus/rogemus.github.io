@@ -1,0 +1,19 @@
+.labels-stack {
+  display: flex;
+  flex-direction: column;
+
+  >span {
+    line-height: var(--font-s-caption);
+  }
+
+  >span:first-of-type {
+    font-family: var(--font-f-inter);
+    font-size: var(--font-s-caption);
+    font-weight: var(--font-w-semibold);
+    margin-bottom: var(--space-100);
+  }
+
+  >span:last-of-type {
+    font-size: var(--font-s-xs-caption);
+  }
+}

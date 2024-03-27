@@ -4,6 +4,10 @@ title = 'Kacper Rogowski'
 theme = 'rogemus'
 description = 'Hi, I’m Kacper. And this is my website. You should totally check it out.'
 
+[markup]
+[markup.highlight]
+lineNos = true
+
 [params]
 title = 'Kacper Rogowski'
 description = 'Hi, I’m Kacper. And this is my website. You should totally check it out.'
