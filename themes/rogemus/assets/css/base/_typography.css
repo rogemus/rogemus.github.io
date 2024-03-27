@@ -1,3 +1,15 @@
+html,
+body {
+  font-family:
+    var(--font-f-mono-mac),
+    var(--font-f-mono-win),
+    var(--font-f-mono-win-2),
+    var(--font-f-dmmono),
+    monospace;
+  font-size: var(--font-s-body);
+  color: var(--color-neutral-500);
+}
+
 h1,
 h2,
 h3,
