@@ -1,18 +1,18 @@
-<nav id="menu">
-
-  {{ with site.Params.Menu }}
-  <ul class="main-menu">
-    {{ range(sort . "order" ) }}
-    <li class="main-menu__item">
-      <a data-umami-event="Menu link" data-umami-event-link="{{ .name }}" class="main-menu__link"
-        href="{{ .link }}">
-        <span class="main-menu__link__icon">
-          {{ partial .icon }}
-        </span>
-        {{ .title }}
-      </a>
-    </li>
-    {{ end }}
-  </ul>
-  {{ end }}
-</nav>
+{{ with site.Params.Menu }}
+<section>
+  <nav>
+    <ul class="no-style no-padding">
+      {{ range(sort . "order" ) }}
+      <li>
+        <a data-umami-event="Menu link" data-umami-event-link="{{ .name }}" class="text-with-icon" href="{{ .link }}">
+          <span>
+            {{ partial .icon }}
+          </span>
+          {{ .title }}
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+  </nav>
+</section>
+{{ end }}

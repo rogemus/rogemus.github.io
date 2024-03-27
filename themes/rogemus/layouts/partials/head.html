@@ -8,7 +8,7 @@
 <link rel="icon" type="image/x-icon" href="{{ .Permalink }}favicon.ico">
 
 {{ $opts := dict "noMap" true "inlineImports" true}}
-{{ with resources.Get "css/styles.css" | postCSS $opts }}
+{{ with resources.Get "css/styles.css" | postCSS $opts | minify }}
 <link rel="stylesheet" href="{{ .RelPermalink }}?{{ now.Unix }}">
 {{ end }}
 

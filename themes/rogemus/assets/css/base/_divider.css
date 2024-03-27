@@ -1,0 +1,6 @@
+hr {
+  margin: var(--space-500);
+  height: 1px;
+  border: 0;
+  background: var(--color-neutral-700);
+}

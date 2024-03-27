@@ -1,0 +1,21 @@
+ul {
+  &.no-style {
+    list-style: none;
+  }
+
+  &:has(li > input),
+  &.no-padding {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+li {
+  margin-bottom: var(--space-100);
+
+  &:has(input) {
+    list-style: none;
+  }
+}
+
+
