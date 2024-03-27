@@ -1,14 +1,11 @@
 a {
   color: var(--color-neutral-100);
   transition: all 200ms;
-
+  text-decoration: none;
+ 
   &:hover {
     color: var(--color-accent-500);
     text-decoration: underline;
-  }
-
-  &.no-decoration {
-    text-decoration: none;
   }
 
   &.accent {

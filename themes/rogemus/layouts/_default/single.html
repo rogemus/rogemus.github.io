@@ -1,25 +1,16 @@
+{{ define "header" }}
+  {{ with site.Params.Aboutme }}
+    <h1>{{ .Title }}</h1>
+  {{ end }}
+{{ end }}
+
+
 {{ define "main" }}
+  <section>
+    {{ .TableOfContents }}
+  </section>
 
-<header>
-  <h1>{{ .Title }}</h1>
-
-  <figure>
-
-  </figure>
-
-</header>
-
-
-
-<section>
-  {{ .TableOfContents }}
-</section>
-
-<article>
-  <div>
+  <article>
     {{ .Content }}
-  </div>
-</article>
-
-{{ partial "scrolltop" }}
+  </article>
 {{ end }}

@@ -1,10 +1,8 @@
 {{ define "header" }}
-<header>
   {{ with site.Params.Aboutme }}
     <h1>{{ .name }}</h1>
     <h2>{{ .position }}</h2>
   {{ end }}
-</header>
 {{ end }}
 
 {{ define "main" }}
@@ -14,6 +12,3 @@
   {{ partial "contact" }}
 {{ end }}
 
-{{ define "footer" }}
-  {{ partial "footer" }}
-{{ end }}

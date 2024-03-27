@@ -4,7 +4,7 @@
     <ul class="no-style no-padding">
       {{ range(sort . "order" ) }}
       <li>
-        <a data-umami-event="Menu link" data-umami-event-link="{{ .name }}" class="text-with-icon no-decoration" href="{{ .link }}">
+        <a data-umami-event="Menu link" data-umami-event-link="{{ .name }}" class="text-with-icon" href="{{ .link }}">
           <span>
             {{ partial .icon }}
           </span>

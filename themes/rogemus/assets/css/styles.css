@@ -1,6 +1,6 @@
 @import "./base/_vars.css";
 @import "./base/_canvas.css";
-/* @import "./base/_code.css"; */
+@import "./base/_code.css";
 @import "./base/_divider.css";
 @import "./base/_font.css";
 @import "./base/_img.css";
@@ -13,9 +13,9 @@
 @import "./components/_stack.css";
 @import "./components/_scroll-top.css";
 @import "./components/_404.css";
-
 @import "./components/_text-with-icon.css";
 @import "./components/_box-icon.css";
 @import "./components/_labels-stack.css";
+@import "./components/_toc.css";
 
 @import "./layouts/_index.css";

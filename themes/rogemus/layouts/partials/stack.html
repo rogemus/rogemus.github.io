@@ -9,7 +9,7 @@
     {{ range(sort . "order" ) }}
 
     <li>
-      <a data-umami-event="Stack link" data-umami-event-link="{{ .name }}" href="{{ .link }}" class="text-with-icon no-decoration">
+      <a data-umami-event="Stack link" data-umami-event-link="{{ .name }}" href="{{ .link }}" class="text-with-icon">
 
         <span class="box-icon">
           {{ partial .icon }}

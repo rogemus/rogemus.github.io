@@ -4,19 +4,17 @@ date = 2024-03-26T15:21:40+01:00
 draft = true
 +++
 
-# Headers
-
-
-# h1 Heading 8-)
-## h2 Heading
-### h3 Heading
-#### h4 Heading
-##### h5 Heading
-###### h6 Heading
-
 ------
 
-# Emphasis
+## Section
+
+normal section 
+
+### SubSection
+
+subsection
+
+## Emphasis
 
 Emphasis, aka italics, with *asterisks* or _underscores_.
 
@@ -38,7 +36,7 @@ _This is italic text_
 
 ------
 
-# Lists
+## Lists
 
 1. First ordered list item
 2. Another item
@@ -65,19 +63,19 @@ _This is italic text_
 
 ------
 
-# Task lists
+## Task lists
 
 - [x] Finish my changes
 - [ ] Push my commits to GitHub
 - [ ] Open a pull request
-- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
+- [x] @mentions, ##refs, [links](), **formatting**, and <del>tags</del> supported
 - [x] list syntax required (any unordered or ordered list supported)
 - [ ] this is a complete item
 - [ ] this is an incomplete item
 
 ------
 
-# Ignoring Markdown formatting
+## Ignoring Markdown formatting
 
 You can tell GitHub to ignore (or escape) Markdown formatting by using \ before the Markdown character.
 
@@ -85,7 +83,7 @@ Let's rename \*our-new-project\* to \*our-old-project\*.
 
 ------
 
-# Links
+## Links
 
 [I'm an inline-style link](https://www.google.com)
 
@@ -111,7 +109,7 @@ Some text to show that the reference links can follow later.
 
 ------
 
-# Images
+## Images
 
 Here's our logo (hover to see the title text):
 
@@ -136,7 +134,7 @@ With a reference later in the document defining the URL location:
 
 ------
 
-# [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
+## [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
 
 Footnote 1 link[^first].
 
@@ -152,7 +150,7 @@ Duplicated footnote reference[^second].
 
 ------
 
-# Code and Syntax Highlighting
+## Code and Syntax Highlighting
 
 Inline `code` has `back-ticks around` it.
 
@@ -268,7 +266,7 @@ datahere
 
 ------
 
-# Tables
+## Tables
 
 Colons can be used to align columns.
 
@@ -314,7 +312,7 @@ Markdown | Less | Pretty
 
 ------
 
-# Blockquotes
+## Blockquotes
 
 > Blockquotes are very handy in email to emulate reply text.
 > This line is part of the same quote.
@@ -329,7 +327,7 @@ Quote break.
 
 ------
 
-# Inline HTML
+## Inline HTML
 
 <dl>
   <dt>Definition list</dt>
@@ -341,14 +339,14 @@ Quote break.
 
 ------
 
-# Horizontal Rules
+## Horizontal Rules
 
 Three or more...
 
 ---
 
 
-# YouTube Videos
+## YouTube Videos
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE" target="_blank">
 <img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10">
