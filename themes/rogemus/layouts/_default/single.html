@@ -1,16 +1,14 @@
 {{ define "header" }}
-  {{ with site.Params.Aboutme }}
-    <h1>{{ .Title }}</h1>
-  {{ end }}
+<h1>{{ .Title }}</h1>
 {{ end }}
 
-
 {{ define "main" }}
-  <section>
-    {{ .TableOfContents }}
-  </section>
+<section>
+  {{ .TableOfContents }}
+</section>
+<hr />
 
-  <article>
-    {{ .Content }}
-  </article>
+<article>
+  {{ .Content }}
+</article>
 {{ end }}

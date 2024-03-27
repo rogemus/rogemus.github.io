@@ -48,6 +48,10 @@ p {
   text-align: justify;
 }
 
+strong {
+  color: var(--color-neutral-100);
+}
+
 small {
   line-height: var(--line-height-caption);
   font-size: var(--font-s-caption);

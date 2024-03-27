@@ -1,10 +1,8 @@
 +++
-title = 'Budget App'
+title = 'Markdown Example'
 date = 2024-03-26T15:21:40+01:00
 draft = true
 +++
-
-------
 
 ## Section
 
