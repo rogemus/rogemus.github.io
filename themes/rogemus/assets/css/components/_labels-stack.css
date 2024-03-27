@@ -7,7 +7,7 @@
   }
 
   >span:first-of-type {
-    font-family: var(--font-f-inter);
+    font-family: var(--font-f-helvetica);
     font-size: var(--font-s-caption);
     font-weight: var(--font-w-semibold);
     margin-bottom: var(--space-100);

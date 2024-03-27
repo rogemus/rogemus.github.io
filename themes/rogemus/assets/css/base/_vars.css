@@ -20,8 +20,10 @@
   --border-r-200: 4px;
 
   /* Font Family*/
-  --font-f-inter: "Inter", sans-serif;
-  --font-f-dmmono: "DM Mono", monospace;
+  --font-f-helvetica: "Helvetica";
+  --font-f-mono-mac: "Monaco";
+  --font-f-mono-win: "Andale Mono";
+  --font-f-mono-win-2: "Consolas";
 
   /* Font Weight */
   --font-w-bold: 700;
