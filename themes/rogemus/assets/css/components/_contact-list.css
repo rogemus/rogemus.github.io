@@ -1,19 +1,24 @@
 .contact-list {
   li {
     display: flex;
-    justify-content: space-between;
     margin: var(--space-100) 0;
-    align-items: center;
+    flex-direction: column;
 
-    &:after {
-      order: 2;
-      display: block;
-      content: '';
-      height: 1px;
-      width: 100%;
-      margin: 0 var(--space-200);
-      border-top: 1px dashed var(--color-neutral-600);
-      margin-bottom: -1px;
+    @media screen and (min-width: 500px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      &:after {
+        order: 2;
+        display: block;
+        content: '';
+        height: 1px;
+        width: 100%;
+        margin: 0 var(--space-200);
+        border-top: 1px dashed var(--color-neutral-600);
+        margin-bottom: -1px;
+      }
     }
   }
 
@@ -29,10 +34,12 @@
   a {
     order: 3;
 
-    &:after {
-      content: '>';
-      padding-left: var(--space-100);
-      font-size: var(--font-s-caption);
+    @media screen and (min-width: 500px) {
+      &:after {
+        content: '>';
+        padding-left: var(--space-100);
+        font-size: var(--font-s-caption);
+      }
     }
   }
 }
