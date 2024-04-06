@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  line-height: var(--line-height-body);
 }
 
 html {
@@ -8,12 +7,20 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
 body {
-  margin: 0 auto;
-  max-width: var(--size-wrapper);
-  padding: var(--space-500) var(--space-200);
+  margin: 0;
+  position: relative;
 }
 
 section {
   margin-bottom: var(--space-500);
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: var(--size-wrapper);
+  padding: var(--space-500) var(--space-200);
+  position: relative;
+  z-index: 10;
 }

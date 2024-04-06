@@ -6,8 +6,13 @@ body {
     var(--font-f-mono-win-2),
     var(--font-f-dmmono),
     monospace;
-  font-size: var(--font-s-body);
   color: var(--color-neutral-500);
+  font-size: var(--font-s-caption);
+
+  @media screen and (min-width: 500px) {
+    font-size: var(--font-s-body);
+    line-height: var(--line-height-body);
+  }
 }
 
 h1,
@@ -56,7 +61,6 @@ h4 {
 }
 
 p {
-  line-height: var(--line-height-body);
   text-align: justify;
 }
 

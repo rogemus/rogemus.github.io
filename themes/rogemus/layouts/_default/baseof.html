@@ -6,15 +6,17 @@
 </head>
 
 <body>
-  <header>
-    {{ block "header" . }} {{end}}
-  </header>
-  <main>
-    {{ block "main" . }} {{end}}
-  </main>
-  <footer>
-    {{ partial "footer" }}
-  </footer>
+  <div class="wrapper">
+    <header>
+      {{ block "header" . }} {{end}}
+    </header>
+    <main>
+      {{ block "main" . }} {{end}}
+    </main>
+    <footer>
+      {{ partial "footer" }}
+    </footer>
+  </div>
 
   <canvas id="ducks"></canvas>
   <div style="display: none;">
@@ -28,6 +30,6 @@
 
   {{ partial "analytics" }}
 
-  </body>
+</body>
 
 </html>
