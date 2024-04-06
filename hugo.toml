@@ -12,7 +12,7 @@ lineNos = true
 title = 'Kacper Rogowski'
 description = 'Hi, I’m Kacper. And this is my website. You should totally check it out.'
 keywords = "front-end, frontend, developer, react, typescipt, javascript, html, css"
-images = ["/cover.png"]
+images = ["/social.png"]
 
 [params.social]
 twitter = "rogemus"
