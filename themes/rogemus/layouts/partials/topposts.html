@@ -1,0 +1,38 @@
+{{ $posts := where site.Pages.ByDate "Type" "posts" }}
+  {{ if $posts }}
+  <section id="posts">
+    <header>
+      <h3>Recent Posts</h3>
+    </header>
+
+    {{ range first 3 $posts }}
+      {{ if .Params.images }}
+        <article class="top-post">
+          <a href="{{ .Permalink }}">
+            {{ $img := .Resources.GetMatch (printf "**%s" .Params.images) }}
+            {{ $small := $img.Fit "160x80" }}
+            <picture>
+              <img loading="lazy" src="{{ $small.RelPermalink }}" alt="{{ .Title }}">
+            </picture>
+          </a>
+
+          <header>
+            <a href="{{ .Permalink }}">
+              {{.Title}}
+            </a>
+            <small class="pub-date">
+              {{ .PublishDate.Format "02.01.2006" }}
+            </small>
+            <small>
+              <a class="accent" href="{{ .Permalink }}">Read more ...</a>
+            </small>
+          </header>
+        </article>
+      {{ end }}
+    {{ end }}
+  </section>
+  <footer class="align-center">
+    <a class="accent" href="/posts">Read all posts...</a>
+  </footer>
+  {{ partial "scrolltop" }}
+{{ end }}

@@ -7,6 +7,7 @@
 @import "./base/_list.css";
 @import "./base/_sections.css";
 @import "./base/_typography.css";
+@import "./base/_table.css";
 
 @import "./components/_contact-list.css";
 @import "./components/_stack.css";
@@ -16,5 +17,8 @@
 @import "./components/_box-icon.css";
 @import "./components/_labels-stack.css";
 @import "./components/_toc.css";
+@import "./components/_logo.css";
+@import "./components/_tags.css";
+@import "./components/_top-post.css";
 
 @import "./layouts/_index.css";

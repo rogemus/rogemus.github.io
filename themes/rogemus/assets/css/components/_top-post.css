@@ -1,0 +1,29 @@
+.top-post {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: var(--space-200);
+
+  picture {
+    margin: 0;
+  }
+
+  a:has(picture) {
+    margin-right: var(--space-200);
+    max-width: 30%;
+  }
+
+  img {
+    padding: var(--space-100);
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pub-date {
+    margin: var(--space-100) 0;
+  }
+}
+

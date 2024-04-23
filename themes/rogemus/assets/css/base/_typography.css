@@ -72,3 +72,28 @@ small {
   line-height: var(--line-height-caption);
   font-size: var(--font-s-caption);
 }
+
+sup {
+  padding-left: 5px;
+}
+
+blockquote {
+  padding: 0 var(--space-300);
+  margin: 0;
+  background: var(--color-neutral-800);
+  border: 1px solid var(--color-neutral-700);
+  margin-bottom: var(--space-200);
+  border-left: 4px solid var(--color-accent-600);
+}
+
+p code {
+  background: var(--color-neutral-800);
+  padding: var(--space-50);
+  border-radius: 5px;
+  font-style: italic;
+  border: 1px solid var(--color-neutral-700);
+}
+
+.align-center {
+  text-align: center;
+}

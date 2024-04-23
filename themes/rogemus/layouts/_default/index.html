@@ -1,13 +1,15 @@
-{{ define "header" }}
+{{ define "header" }} 
   {{ with site.Params.Aboutme }}
-    <h1>{{ .name }}</h1>
+    <h1><a href="/">{{ .name }}</a></h1>
     <h2>{{ .position }}</h2>
   {{ end }}
 {{ end }}
 
+
 {{ define "main" }}
   {{ partial "about" }}
   {{ partial "menu" }}
+  {{ partial "topposts" }}
   {{ partial "stack" }}
   {{ partial "contact" }}
 {{ end }}

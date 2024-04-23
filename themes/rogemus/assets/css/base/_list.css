@@ -8,14 +8,21 @@ ul {
     margin: 0;
     padding: 0;
   }
+
+  &.small-padding {
+    margin: 0;
+    padding: 0 var(--space-200);
+  }
 }
 
 li {
   margin-bottom: var(--space-100);
 
+  &::marker {
+    color: var(--color-accent-600);
+  }
+
   &:has(input) {
     list-style: none;
   }
 }
-
-

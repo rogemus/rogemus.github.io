@@ -1,0 +1,30 @@
+{{ define "header" }}
+  {{ with site.Params.Aboutme }}
+    <h1><a href="/">{{ .name }}</a></h1>
+    <h2>{{ .position }}</h2>
+  {{ end }}
+{{ end }}
+
+{{ define "main" }}
+  {{ if .Data.Term }}
+   {{ $href := print (absURL "tags/") (urlize .Data.Term) }} <p>tag:
+      <code>
+        <a href="{{$href}}">{{ .Data.Term }}</a>
+      </code>
+    </p>
+    <hr />
+  {{ end }}
+  {{ range .Paginator.Pages.ByDate }}
+    <ul class="small-padding">
+      <li>
+        <a href="{{ .Permalink }}">{{.Title}} </a>
+        <div>
+          <small>
+            {{ .PublishDate.Format "02.01.2006" }}
+          </small>
+        </div>
+      </li>
+    </ul>
+  {{ end }}
+  {{ template "_internal/pagination.html" . }}
+{{ end }}
