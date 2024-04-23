@@ -1,14 +1,43 @@
-{{ define "header" }}
-<h1>{{ .Title }}</h1>
-{{ end }}
-
 {{ define "main" }}
-<section>
-  {{ .TableOfContents }}
-</section>
-<hr />
+  <h1>{{ .Title }}</h1>
 
-<article>
-  {{ .Content }}
-</article>
+  <small>
+    {{ .PublishDate.Format "02.01.2006" }}
+  </small>
+
+  {{ if .Params.tags }}
+    <ul class="tags">
+      {{ range .Params.tags }} {{ $href := print (absURL "tags/") (urlize .) }}
+      <li>
+        <a href="{{ $href }}">{{ . }}</a>
+      </li>
+      {{ end }}
+    </ul>
+  {{ end }}
+
+  {{ if .Params.images }}
+    <section>
+      {{ $img := .Resources.GetMatch (printf "**%s" .Params.images) }}
+      {{ $big := $img.Fit "550x300" }}
+      {{ $small := $img.Fit "350x200" }}
+      <picture>
+        <source srcset={{ $big.RelPermalink }} media="(min-width: 500px)" />
+        <img loading="lazy" src="{{ $small.RelPermalink }}" alt="{{ .Title }}">
+      </picture>
+    </section>
+  {{ end }}
+
+  <section>
+    {{ .Description }}
+  </section>
+
+  <hr />
+  <section>
+    {{ .TableOfContents }}
+  </section>
+  <hr />
+
+  <article>
+    {{ .Content }}
+  </article>
 {{ end }}

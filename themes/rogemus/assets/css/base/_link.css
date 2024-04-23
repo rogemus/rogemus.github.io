@@ -16,3 +16,7 @@ a {
     }
   }
 }
+
+code a {
+  color: var(--color-neutral-600);
+}

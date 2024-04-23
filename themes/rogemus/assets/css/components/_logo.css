@@ -1,0 +1,21 @@
+header {
+  position: relative;
+}
+
+.logo {
+  display: none;
+
+  @media screen and (min-width: 500px) {
+    position: absolute;
+    left: -100px;
+    top: 0;
+    transform: rotate(15deg);
+    display: block;
+
+    img {
+      width: 85px;
+      height: auto;
+      border: 0;
+    }
+  }
+}
