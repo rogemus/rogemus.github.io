@@ -38,12 +38,12 @@ link = "https://1drv.ms/b/s!AjQ5YYWM-rh3sZtRjWIkcp-7T39JPA?e=ElTZbd"
 icon = "icons/zap"
 order = 1
 
-[params.menu.post]
-title = "Recent Posts"
-name = "recent-posts"
-link = "#posts"
-icon = "icons/bookmark"
-order = 2
+# [params.menu.post]
+# title = "Recent Posts"
+# name = "recent-posts"
+# link = "#posts"
+# icon = "icons/bookmark"
+# order = 2
 
 [params.menu.stack]
 title = "Stack"
