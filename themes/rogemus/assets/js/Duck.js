@@ -1,3 +1,5 @@
+import { getRandomIntInRange, getRandomFloatInRange } from './utils';
+
 const $img = document.getElementById('duck');
 
 const imgSize = {
@@ -15,25 +17,17 @@ export class Duck {
   rotateScale = 1;
 
   constructor() {
-    this.x = this.getRandomIntInRange(window.innerWidth);
-    this.y = this.getRandomIntInRange(200);
-    this.scale = this.getRandomFloatInRange(0.75, 2.15);
+    this.x = getRandomIntInRange(window.innerWidth);
+    this.y = getRandomIntInRange(200);
+    this.scale = getRandomFloatInRange(0.75, 2.15);
     this.sizeX *= this.scale;
     this.sizeY *= this.scale;
-    this.rotateScale = this.getRandomFloatInRange(0.75, 2.5)
-    this.speedScale = this.getRandomFloatInRange(1.2, 3);
+    this.rotateScale = getRandomFloatInRange(0.75, 2.5)
+    this.speedScale = getRandomFloatInRange(1.2, 3);
   }
 
   isOffScreen(windowHeight) {
     return this.y > windowHeight;
-  }
-
-  getRandomIntInRange(max) {
-    return Math.floor(Math.random() * max)
-  }
-
-  getRandomFloatInRange(min, max) {
-    return Math.max(Math.random() * max, min)
   }
 
   animate(fallingOffset, ctx) {

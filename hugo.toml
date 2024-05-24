@@ -12,7 +12,7 @@ lineNos = true
 title = 'Kacper Rogowski'
 description = 'Hi, I’m Kacper. And this is my website. You should totally check it out.'
 keywords = "front-end, frontend, developer, react, typescipt, javascript, html, css"
-images = ["/social.png"]
+images = ["/social-cover.png"]
 
 [params.social]
 twitter = "rogemus"
@@ -26,7 +26,6 @@ name = 'Kacper Rogowski'
 position = 'Front-end Developer'
 about = """
 Experienced **React** and **Javascript**, **Typescript** developer with strong frontend skills.
-Skilled in team management, creating detailed requirements, prepering complext technical solution and adapting to new technologies.
 Ambitious to evolve into a Full Stack Developer. Committed to success with a mindset of "_everything is possible, it's just a matter of when_".
 """
 
