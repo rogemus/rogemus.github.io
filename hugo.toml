@@ -64,7 +64,7 @@ order = 4
 title = "CV / Resume"
 label = "@onedrive"
 name = "resume"
-link = "https://1drv.ms/b/s!AjQ5YYWM-rh3sZtRjWIkcp-7T39JPA?e=ElTZbd"
+link = "https://1drv.ms/b/c/77b8fa8c85613934/EXq4RA3YZllEqQz0z7zyPk0B1vtdTi3Jyeyb-om34jX92g?e=IujWy4"
 order = 1
 
 [params.contact.linkedin]
@@ -76,7 +76,7 @@ order = 2
 
 [params.contact.mail]
 title = "Email"
-label = "kacper-rogowski@outlook.com"
+label = "kacper.rogowski@outlook.com"
 name = "mail"
 link = "mailto:kacper.rogowski@outlook.com"
 order = 3
