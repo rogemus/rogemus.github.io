@@ -9,9 +9,11 @@
 
 {{ $opts := dict "noMap" true "inlineImports" true "use" "cssnano postcss-css-variables" }}
 {{ with resources.Get "css/styles.css" | postCSS $opts | minify }}
-<link rel="stylesheet" href="{{ .RelPermalink }}?{{ now.Unix }}">
+  <style>{{ .Content | safeCSS }}</style>
 {{ end }}
 
 {{ template "_internal/twitter_cards.html" . }}
 {{ template "_internal/schema.html" . }}
 {{ template "_internal/opengraph.html" . }}
+
+

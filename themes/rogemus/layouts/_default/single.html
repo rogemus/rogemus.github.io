@@ -1,3 +1,11 @@
+{{ define "layouthead" }}
+  {{ $opts := dict "noMap" true "inlineImports" true "use" "cssnano postcss-css-variables" }}
+  {{ with resources.Get "css/post.css" | postCSS $opts | minify }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}?{{ now.Unix }}">
+  {{ end }}
+{{ end }}
+
+
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
 

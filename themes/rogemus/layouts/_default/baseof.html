@@ -3,6 +3,7 @@
 
 <head>
   {{ partial "head.html" . }}
+  {{ block "layouthead" . }} {{ end }}
 </head>
 
 <body>
@@ -13,10 +14,10 @@
           <img id="duck" src="/duck.png" alt="yellow rubber duck" height="65" width="80">
         </a>
       </div>
-      {{ block "header" . }} {{end}}
+      {{ block "header" . }} {{ end }}
     </header>
     <main>
-      {{ block "main" . }} {{end}}
+      {{ block "main" . }} {{ end }}
     </main>
     <footer>
       {{ partial "footer" }}
