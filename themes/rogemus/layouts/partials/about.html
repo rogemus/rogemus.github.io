@@ -3,10 +3,11 @@
 <section id="about">
   <p>{{ .about | markdownify }}</p>
   <div class="text-with-icon">
-    <span>
-      {{ partial "icons/mappin" }}
-    </span>
-    <span>Poznań, PL</span>
+    <span>{{ partial "icons/mappin" }}</span>
+
+    {{ with site.Params.Aboutme }}
+    <span>{{ .location }}</span>
+    {{ end }}
   </div>
 </section>
 

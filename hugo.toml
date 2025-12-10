@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://krogowski.dev/'
 languageCode = 'en-us'
 title = 'Kacper Rogowski'
 theme = 'rogemus'
@@ -24,6 +24,7 @@ homepage = "https://www.krogowski.dev/"
 [params.aboutme]
 name = 'Kacper Rogowski'
 position = 'Front-end Developer'
+location = 'Gdańsk, PL'
 about = """
 Experienced **React** and **Javascript**, **Typescript** developer with strong frontend skills.
 Ambitious to evolve into a Full Stack Developer. Committed to success with a mindset of "_everything is possible, it's just a matter of when_".
@@ -60,12 +61,12 @@ order = 4
 
 
 [params.contact]
-[params.contact.resume]
-title = "CV / Resume"
-label = "@onedrive"
-name = "resume"
-link = "https://1drv.ms/b/c/77b8fa8c85613934/EXq4RA3YZllEqQz0z7zyPk0B1vtdTi3Jyeyb-om34jX92g?e=IujWy4"
-order = 1
+# [params.contact.resume]
+# title = "CV / Resume"
+# label = "@onedrive"
+# name = "resume"
+# link = "https://1drv.ms/b/c/77b8fa8c85613934/EXq4RA3YZllEqQz0z7zyPk0B1vtdTi3Jyeyb-om34jX92g?e=IujWy4"
+# order = 1
 
 [params.contact.linkedin]
 title = "Linkedin"
@@ -105,14 +106,6 @@ title = "TypeScript"
 subtitle = "Programing language"
 order = 2
 
-[params.stack.redux]
-icon = "icons/database"
-name = "redux"
-link = "https://redux.js.org"
-title = "Redux"
-subtitle ="State Container"
-order = 3
-
 [params.stack.go]
 icon = "icons/golang"
 name = "go"
@@ -144,12 +137,4 @@ link = "https://neovim.io/"
 title = "NeoVim"
 subtitle = "Code Editor"
 order = 7
-
-[params.stack.spotify]
-icon = "icons/spotify"
-name = "spotify"
-link = "https://open.spotify.com/playlist/6qSiFruC3xCtHqra1SvGj0?si=52d4d3c6523145e3"
-title = "Spotify"
-subtitle = "Music for coding"
-order = 8
 
