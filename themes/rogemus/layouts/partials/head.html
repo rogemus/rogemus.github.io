@@ -7,7 +7,7 @@
 <title>{{.Site.Title}}</title>
 <link rel="icon" type="image/x-icon" href="{{ .Permalink }}favicon.ico">
 
-{{ $opts := dict "noMap" true "inlineImports" true}}
+{{ $opts := dict "noMap" true "inlineImports" true "use" "cssnano postcss-css-variables" }}
 {{ with resources.Get "css/styles.css" | postCSS $opts | minify }}
 <link rel="stylesheet" href="{{ .RelPermalink }}?{{ now.Unix }}">
 {{ end }}
