@@ -1,0 +1,21 @@
+h4 {
+  line-height: var(--line-height-h4);
+  font-size: var(--font-s-h4);
+}
+
+sup {
+  padding-left: 5px;
+}
+
+blockquote {
+  padding: 0 var(--space-300);
+  margin: 0;
+  background: var(--color-neutral-800);
+  border: 1px solid var(--color-neutral-700);
+  margin-bottom: var(--space-200);
+  border-left: 4px solid var(--color-accent-600);
+}
+
+.align-center {
+  text-align: center;
+}

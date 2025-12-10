@@ -10,7 +10,3 @@ svg {
   height: 100%;
 }
 
-picture {
-  display: block;
-  margin: var(--space-200) 0;
-}
