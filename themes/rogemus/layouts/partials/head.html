@@ -5,10 +5,11 @@
 <meta name="keywords" content="{{ .Site.Params.keywords }}" />
 
 <title>{{.Site.Title}}</title>
-<link rel="icon" type="image/x-icon" href="{{ .Permalink }}favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ .Permalink }}/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ .Permalink }}/favicon-32x32.png">
 
 {{ $opts := dict "noMap" true "inlineImports" true "use" "cssnano postcss-css-variables" }}
-{{ with resources.Get "css/styles.css" | postCSS $opts | minify }}
+{{ with resources.Get "css/styles.css" | postCSS $opts | minify | fingerprint }}
   <style>{{ .Content | safeCSS }}</style>
 {{ end }}
 
