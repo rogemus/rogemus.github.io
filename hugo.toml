@@ -1,5 +1,5 @@
 baseURL = 'https://krogowski.dev/'
-languageCode = 'en-us'
+locale = 'en-us'
 title = 'Kacper Rogowski'
 theme = 'rogemus'
 description = 'Hi, I’m Kacper. And this is my website. You should totally check it out.'
