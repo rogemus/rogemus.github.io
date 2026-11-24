@@ -2,5 +2,6 @@
   font-family: "DM Mono";
   src:
     local("DM Mono"),
-    src("/fonts/DMMono-Regular.ttf") format("truetype");
+    url("/fonts/DMMono-Regular.woff2") format("woff2");
+  font-display: swap;
 }

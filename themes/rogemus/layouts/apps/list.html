@@ -1,7 +1,7 @@
 {{ define "layouthead" }}
   {{ $opts := dict "noMap" true "inlineImports" true "use" "cssnano postcss-css-variables" }}
-  {{ with resources.Get "css/pages/apps.css" | css.PostCSS $opts | minify }}
-    <link rel="stylesheet" href="{{ .RelPermalink }}?{{ now.Unix }}">
+  {{ with resources.Get "css/pages/apps.css" | css.PostCSS $opts | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}">
   {{ end }}
 {{ end }}
 

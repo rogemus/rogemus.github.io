@@ -47,9 +47,6 @@ const step = (now: number): void => {
     last = now;
     const newDucks = createDucks(config.newDucksCount);
     ducks.push(...newDucks);
-
-    console.log("🐤 !!! MORE DUCKS !!! 🐤");
-    console.log(`🐤 count: ${ducks.length}`);
   }
 
   const currentTime = Date.now();
@@ -62,7 +59,6 @@ const step = (now: number): void => {
 const ducksAnimation = (): void => {
   requestAnimationFrame((ts) => {
     ducks = createDucks(config.newDucksCount);
-    console.log("🐤 🐤 🐤 🐤 🐤 🐤 🐤 🐤 🐤 🐤 🐤 🐤 🐤");
     step(ts);
   });
 };
