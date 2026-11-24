@@ -1,6 +1,6 @@
 import { getRandomIntInRange, getRandomFloatInRange } from './utils';
 
-const $img = document.getElementById('duck');
+const $img = document.getElementById('duck') as CanvasImageSource;
 
 const imgSize = {
   width: 80 / 2,
@@ -26,11 +26,11 @@ export class Duck {
     this.speedScale = getRandomFloatInRange(1.2, 3);
   }
 
-  isOffScreen(windowHeight) {
+  isOffScreen(windowHeight: number): boolean {
     return this.y > windowHeight;
   }
 
-  animate(fallingOffset, ctx) {
+  animate(fallingOffset: number, ctx: CanvasRenderingContext2D): void {
     const xCenter = this.x + (this.sizeX / 2);
     const yCenter = this.y + (this.sizeY / 2);
     const offset = fallingOffset * this.speedScale;
@@ -43,4 +43,3 @@ export class Duck {
     ctx.restore();
   }
 }
-

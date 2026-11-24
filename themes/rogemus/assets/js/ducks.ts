@@ -9,22 +9,22 @@ const config = {
   newDucksCount: 7,
 }
 
-const $canvas = document.getElementById('ducks');
+const $canvas = document.getElementById('ducks') as HTMLCanvasElement;
 const canvasHeight = window.innerHeight + config.windowBufforBottom + config.windowBufforTop;
-const ctx = $canvas.getContext("2d");
+const ctx = $canvas.getContext("2d") as CanvasRenderingContext2D;
 
-let ducks = [];
+let ducks: Duck[] = [];
 let last = 0;
 let time = Date.now();
 
 ctx.canvas.width = window.innerWidth;
 ctx.canvas.height = window.innerHeight + 500;
 
-const createDucks = (count) => (
+const createDucks = (count: number): Duck[] => (
   Array(count).fill(null).map(() => new Duck())
 );
 
-const animateDucks = (deltaTime) => {
+const animateDucks = (deltaTime: number): void => {
   ctx.clearRect(0, 0, window.innerWidth, canvasHeight);
   const currentTime = Date.now();
   const speed = deltaTime * 0.02;
@@ -40,7 +40,7 @@ const animateDucks = (deltaTime) => {
   }
 }
 
-const step = (now) => {
+const step = (now: number): void => {
   if (
     (!last || now - last > config.newDucksInterval) &&
     ducks.length <= config.maxNumberOfDucks
@@ -60,7 +60,7 @@ const step = (now) => {
   requestAnimationFrame(step);
 };
 
-const ducksAnimation = () => {
+const ducksAnimation = (): void => {
   requestAnimationFrame((ts) => {
     ducks = createDucks(config.newDucksCount);
     console.log('🐤 🐤 🐤 🐤 🐤 🐤 🐤 🐤 🐤 🐤 🐤 🐤 🐤')

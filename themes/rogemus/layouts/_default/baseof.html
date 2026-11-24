@@ -27,7 +27,7 @@
   <canvas id="ducks"></canvas>
 
   {{ $opts := dict "minify" true }}
-  {{ with resources.Get "js/ducks.js" | js.Build $opts }}
+  {{ with resources.Get "js/ducks.ts" | js.Build $opts }}
   <script defer src="{{ .RelPermalink }}"></script>
   {{ end }}
 
