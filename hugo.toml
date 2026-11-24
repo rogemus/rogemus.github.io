@@ -34,7 +34,7 @@ Ambitious to evolve into a Full Stack Developer. Committed to success with a min
 [params.menu.resume]
 title = "CV / Resume"
 name = "resume"
-link = "https://1drv.ms/b/c/77b8fa8c85613934/EXq4RA3YZllEqQz0z7zyPk0B1vtdTi3Jyeyb-om34jX92g?e=IujWy4"
+link = "/Kacper-Rogowski-CV.pdf"
 icon = "icons/zap"
 order = 1
 
@@ -44,13 +44,6 @@ order = 1
 # link = "#posts"
 # icon = "icons/bookmark"
 # order = 2
-
-[params.menu.stack]
-title = "Stack"
-name = "stack"
-link = "#stack"
-icon = "icons/layers"
-order = 3
 
 [params.menu.contact]
 title = "Contact"
