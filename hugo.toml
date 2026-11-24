@@ -7,6 +7,15 @@ theme = 'rogemus'
 keepWhitespace = false
 keepComments = false
 
+[outputFormats.AppsJSON]
+mediaType = "application/json"
+baseName = "apps"
+isPlainText = true
+notAlternative = true
+
+[outputs]
+home = ["HTML", "RSS", "AppsJSON"]
+
 [markup]
 [markup.highlight]
 lineNos = true

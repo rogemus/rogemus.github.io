@@ -1,0 +1,26 @@
+{{ define "layouthead" }}
+  {{ $opts := dict "noMap" true "inlineImports" true "use" "cssnano postcss-css-variables" }}
+  {{ with resources.Get "css/post.css" | css.PostCSS $opts | minify }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}?{{ now.Unix }}">
+  {{ end }}
+  {{ with resources.Get "css/wide.css" | css.PostCSS $opts | minify }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}?{{ now.Unix }}">
+  {{ end }}
+{{ end }}
+
+{{ define "header" }}
+  {{ with site.Params.Aboutme }}
+    <h1><a href="/">{{ .name }}</a></h1>
+    <h2>{{ .position }}</h2>
+  {{ end }}
+{{ end }}
+
+{{ define "main" }}
+  <h3>{{ .Title }}</h3>
+
+  <section>
+    {{ .Description }}
+  </section>
+
+  {{ partial "app-cards" .Pages.ByTitle }}
+{{ end }}

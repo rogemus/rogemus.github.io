@@ -1,0 +1,5 @@
+{{- $items := slice -}}
+{{- range (where site.RegularPages "Type" "apps").ByTitle -}}
+  {{- $items = $items | append (dict "title" .Title "description" .Description "url" .RelPermalink) -}}
+{{- end -}}
+{{- $items | jsonify (dict "indent" "  ") -}}

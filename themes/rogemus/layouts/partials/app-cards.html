@@ -1,0 +1,23 @@
+<ul class="apps no-padding no-style">
+  {{ range . }}
+  {{ $app := . }}
+
+  <li>
+    <article class="app-card">
+      <h4>{{ .Title }}</h4>
+      <p>{{ .Description }}</p>
+      <footer>
+        {{ with .Params.github }}
+        <a data-umami-event="App link" data-umami-event-link="{{ $app.Title }}" href="{{ . }}" class="accent">
+          GitHub
+        </a>
+        {{ end }}
+        <a data-umami-event="App more link" data-umami-event-link="{{ $app.Title }}" href="{{ .RelPermalink }}" class="accent">
+          Read more
+        </a>
+      </footer>
+    </article>
+  </li>
+
+  {{ end }}
+</ul>

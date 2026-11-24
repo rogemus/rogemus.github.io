@@ -1,0 +1,28 @@
+{{ define "layouthead" }}
+  {{ $opts := dict "noMap" true "inlineImports" true "use" "cssnano postcss-css-variables" }}
+  {{ with resources.Get "css/post.css" | css.PostCSS $opts | minify }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}?{{ now.Unix }}">
+  {{ end }}
+  {{ with resources.Get "css/wide.css" | css.PostCSS $opts | minify }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}?{{ now.Unix }}">
+  {{ end }}
+{{ end }}
+
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+
+  <section>
+    {{ .Description }}
+  </section>
+
+  <article>
+    {{ .Content }}
+  </article>
+
+  <footer>
+    {{ with .Params.github }}
+      <a class="accent" href="{{ . }}">View on GitHub</a>
+    {{ end }}
+    <a class="accent" href="{{ "apps/" | relURL }}">Back to apps</a>
+  </footer>
+{{ end }}

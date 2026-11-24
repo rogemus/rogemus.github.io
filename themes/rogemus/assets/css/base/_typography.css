@@ -64,3 +64,15 @@ small {
   line-height: var(--line-height-caption);
   font-size: var(--font-s-caption);
 }
+
+article footer,
+section footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--space-200);
+
+  a {
+    font-size: var(--font-s-caption);
+    line-height: var(--line-height-caption);
+  }
+}

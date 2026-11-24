@@ -2,6 +2,7 @@ a {
   color: var(--color-neutral-100);
   transition: all 200ms;
   text-decoration: none;
+  cursor: pointer;
 
   &:hover {
     color: var(--color-accent-500);

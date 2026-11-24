@@ -1,0 +1,15 @@
+{{ $apps := where site.RegularPages "Type" "apps" }}
+{{ with $apps.ByTitle }}
+<section id="apps">
+
+  <header>
+    <h3>Apps</h3>
+  </header>
+
+  {{ partial "app-cards" . }}
+
+  <footer class="align-center">
+    <a class="accent" href="{{ "apps/" | relURL }}">See all apps...</a>
+  </footer>
+</section>
+{{ end }}
