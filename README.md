@@ -4,7 +4,7 @@ Personal website of Kacper Rogowski, built with [Hugo](https://gohugo.io) and de
 
 ## Requirements
 
-- Hugo extended `0.170.1`
+- Hugo `0.170.1`
 - Node.js (see `.node-version`) and npm
 - [just](https://github.com/casey/just) (optional)
 
