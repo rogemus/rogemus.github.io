@@ -2,7 +2,3 @@
 @import "../base/_h4.css";
 @import "../base/_code.css";
 @import "../base/_table.css";
-
-.wrapper {
-  max-width: 800px;
-}

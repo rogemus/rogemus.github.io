@@ -1,16 +1,5 @@
-const strokeWidth = {
-  name: "setStrokeWidth",
-  fn: () => ({
-    element: {
-      enter: (node, parentNode) => {
-        if (node.name === "svg" && parentNode.type === "root") {
-          node.attributes["stroke-width"] = "2";
-        }
-      },
-    },
-  }),
-};
-
+// Icons are Tabler outline icons. The shared presentation attributes (size, fill, stroke, ...)
+// are set once for all icons in themes/rogemus/assets/css/base/_img.css, so they are stripped here.
 const removeBoundingPath = {
   name: "removeBoundingPath",
   fn: () => ({
@@ -31,14 +20,19 @@ const removeBoundingPath = {
 export default {
   multipass: true,
   plugins: [
+    removeBoundingPath,
     "preset-default",
     "removeXMLNS",
-    { name: "removeAttrs", params: { attrs: "class" } },
+    {
+      name: "removeAttrs",
+      params: {
+        attrs:
+          "svg:(class|width|height|fill|stroke|stroke-width|stroke-linecap|stroke-linejoin)",
+      },
+    },
     {
       name: "addAttributesToSVGElement",
-      params: { attributes: [{ "aria-hidden": "true" }, { focusable: "false" }] },
+      params: { attributes: [{ "aria-hidden": "true" }] },
     },
-    strokeWidth,
-    removeBoundingPath,
   ],
 };

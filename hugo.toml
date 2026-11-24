@@ -1,5 +1,6 @@
 baseURL = 'https://krogowski.dev/'
 locale = 'en-us'
+disableHugoGeneratorInject = true
 title = 'Kacper Rogowski'
 theme = 'rogemus'
 
@@ -22,7 +23,6 @@ lineNos = true
 
 [params]
 description = 'Hi, I’m Kacper. And this is my website. You should totally check it out.'
-keywords = "front-end, frontend, developer, react, typescipt, javascript, html, css"
 images = ["/social-cover.png"]
 
 [params.social]
