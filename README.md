@@ -34,6 +34,16 @@ hugo server -D
 - `.github/workflows/` – `check.yaml` runs on merge to `main`, `release.yaml` deploys on `v*` tags
 - `.github/actions/` – shared setup and verify steps
 
+## Icons
+
+Use only [Tabler icons](https://github.com/tabler/tabler-icons) – outline variant, stroke width 2. No filled icons and no other icon sets.
+
+To add an icon:
+
+1. Copy `node_modules/@tabler/icons/icons/outline/<name>.svg` to `themes/rogemus/assets/icons/<name>.svg`.
+2. Run `npm run icons:optimize` (svgo; sets `stroke-width="2"`).
+3. Render it with `{{ partial "icon" "<name>" }}`, or set `icon = "<name>"` in `hugo.toml`.
+
 ## Releasing
 
 Push a version tag to run the checks and deploy to GitHub Pages:

@@ -46,28 +46,28 @@ Ambitious to evolve into a Full Stack Developer. Committed to success with a min
 title = "CV / Resume"
 name = "resume"
 link = "/Kacper-Rogowski-CV.pdf"
-icon = "icons/zap"
+icon = "zap"
 order = 1
 
 # [params.menu.post]
 # title = "Recent Posts"
 # name = "recent-posts"
 # link = "#posts"
-# icon = "icons/bookmark"
+# icon = "bookmark"
 # order = 2
 
 [params.menu.contact]
 title = "Contact"
 name = "contact"
 link = "#contact"
-icon = "icons/atsign"
+icon = "atsign"
 order = 4
 
 [params.menu.apps]
 title = "Apps"
 name = "apps"
 link = "/apps/"
-icon = "icons/code"
+icon = "code"
 order = 5
 
 [params.contact]
@@ -101,7 +101,7 @@ order = 4
 
 [params.stack]
 [params.stack.react]
-icon = "icons/react"
+icon = "react"
 name = "react"
 link = ""
 title = "React"
@@ -109,7 +109,7 @@ subtitle = "Frontend lib"
 order = 1
 
 [params.stack.ts]
-icon = "icons/ts"
+icon = "ts"
 name = "typescipt"
 link = "https://www.typescriptlang.org"
 title = "TypeScript"
@@ -117,7 +117,7 @@ subtitle = "Programing language"
 order = 2
 
 [params.stack.go]
-icon = "icons/golang"
+icon = "golang"
 name = "go"
 link = "https://go.dev"
 title = "Go"
@@ -125,7 +125,7 @@ subtitle = "Programing language"
 order = 4
 
 [params.stack.github]
-icon = "icons/github"
+icon = "github"
 name = "github"
 link = "https://github.com/rogemus"
 title = "Github"
@@ -133,7 +133,7 @@ subtitle = "Dev Tool"
 order = 5
 
 [params.stack.figma]
-icon = "icons/figma"
+icon = "figma"
 name = "figma"
 link = "https://www.figma.com"
 title = "Figma"
@@ -141,7 +141,7 @@ subtitle = "Design Tool"
 order = 6
 
 [params.stack.neovim]
-icon = "icons/code"
+icon = "code"
 name = "neovim"
 link = "https://neovim.io/"
 title = "NeoVim"

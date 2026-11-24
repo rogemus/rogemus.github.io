@@ -3,7 +3,7 @@
 <section id="about">
   <p>{{ .about | markdownify }}</p>
   <div class="text-with-icon">
-    <span>{{ partial "icons/mappin" }}</span>
+    <span>{{ partial "icon" "mappin" }}</span>
 
     {{ with site.Params.Aboutme }}
     <span>{{ .location }}</span>
