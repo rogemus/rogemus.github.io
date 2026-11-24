@@ -3,7 +3,7 @@
   display: flex;
 
   > span {
-    margin-right: var(--space-200);
+    margin-right: var(--space-medium);
     display: flex;
   }
 

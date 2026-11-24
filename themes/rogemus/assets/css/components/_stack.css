@@ -4,8 +4,8 @@
   }
 
   a {
-    padding: var(--space-100);
-    border-radius: var(--border-r-200);
+    padding: var(--space-small);
+    border-radius: var(--border-r-medium);
 
     &:hover {
       background: var(--color-neutral-700);

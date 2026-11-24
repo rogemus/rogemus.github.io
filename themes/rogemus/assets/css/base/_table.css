@@ -1,6 +1,6 @@
 table {
   border-spacing: 0;
-  margin-bottom: var(--space-200);
+  margin-bottom: var(--space-medium);
   width: 100%;
 }
 
@@ -26,7 +26,7 @@ tr:last-of-type {
 td,
 th {
   border-right: 1px solid var(--color-neutral-700);
-  padding: var(--space-100) var(--space-200);
+  padding: var(--space-small) var(--space-medium);
 
   &:last-child {
     border-right: 0;

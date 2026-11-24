@@ -1,12 +1,6 @@
-#apps {
-  footer {
-    margin-top: var(--space-200);
-  }
-}
-
 .apps {
   display: grid;
-  gap: var(--space-200);
+  gap: var(--space-medium);
 
   @media screen and (min-width: 450px) {
     grid-template-columns: 1fr 1fr;
@@ -17,9 +11,9 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: var(--space-200);
+  padding: var(--space-medium);
   border: 1px solid var(--color-neutral-700);
-  border-radius: var(--border-r-200);
+  border-radius: var(--border-r-medium);
   transition: all 200ms;
 
   &:hover {
@@ -27,11 +21,11 @@
   }
 
   h4 {
-    margin-bottom: var(--space-100);
+    margin-bottom: var(--space-small);
   }
 
   p {
-    margin: 0 0 var(--space-200);
+    margin: 0 0 var(--space-medium);
     text-align: left;
     font-size: var(--font-s-caption);
     line-height: var(--line-height-caption);

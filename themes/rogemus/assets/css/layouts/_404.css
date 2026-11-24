@@ -16,7 +16,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background: var(--color-neutral-800);
-  padding: var(--space-200);
+  padding: var(--space-medium);
   border: 1px solid var(--color-neutral-700);
   width: 300px;
 }

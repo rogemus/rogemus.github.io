@@ -20,7 +20,7 @@ h4 {
   margin: 0;
   font-weight: var(--font-w-semibold);
   font-family: var(--font-f-helvetica), sans-serif;
-  margin-bottom: var(--space-200);
+  margin-bottom: var(--space-medium);
   transform: skewX(-10deg);
   color: var(--color-neutral-100);
 }
@@ -69,7 +69,7 @@ article footer,
 section footer {
   display: flex;
   justify-content: space-between;
-  margin-bottom: var(--space-200);
+  margin-bottom: var(--space-medium);
 
   a {
     font-size: var(--font-s-caption);

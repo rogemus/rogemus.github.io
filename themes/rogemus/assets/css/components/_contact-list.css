@@ -1,7 +1,7 @@
 .contact-list {
   li {
     display: flex;
-    margin: var(--space-100) 0;
+    margin: var(--space-small) 0;
     flex-direction: column;
 
     @media screen and (min-width: 500px) {
@@ -15,7 +15,7 @@
         content: "";
         height: 1px;
         width: 100%;
-        margin: 0 var(--space-200);
+        margin: 0 var(--space-medium);
         border-top: 1px dashed var(--color-neutral-600);
         margin-bottom: -1px;
       }
@@ -37,7 +37,7 @@
     @media screen and (min-width: 500px) {
       &:after {
         content: ">";
-        padding-left: var(--space-100);
+        padding-left: var(--space-small);
         font-size: var(--font-s-caption);
       }
     }

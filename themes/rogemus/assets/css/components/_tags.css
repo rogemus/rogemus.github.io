@@ -4,12 +4,12 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin-top: var(--space-200);
+  margin-top: var(--space-medium);
   justify-content: flex-end;
 
   li {
     list-style: none;
-    margin-left: var(--space-200);
+    margin-left: var(--space-medium);
   }
 
   a {
@@ -17,7 +17,7 @@
     color: var(--color-neutral-600);
     background: var(--color-neutral-800);
     border-radius: 5px;
-    padding: var(--space-50);
+    padding: var(--space-small);
     font-size: var(--font-s-caption);
 
     &:hover {

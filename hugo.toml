@@ -63,6 +63,12 @@ link = "#contact"
 icon = "icons/atsign"
 order = 4
 
+[params.menu.apps]
+title = "Apps"
+name = "apps"
+link = "/apps/"
+icon = "icons/code"
+order = 5
 
 [params.contact]
 # [params.contact.resume]

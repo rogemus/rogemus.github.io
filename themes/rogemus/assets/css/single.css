@@ -5,9 +5,6 @@
 @import "./base/_typography-accents.css";
 @import "./base/_table.css";
 
-@import "./components/_scroll-top.css";
-@import "./components/_404.css";
 @import "./components/_toc.css";
-@import "./components/_apps.css";
 @import "./components/_tags.css";
 @import "./components/_top-post.css";

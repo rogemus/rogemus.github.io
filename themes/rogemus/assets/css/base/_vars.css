@@ -15,9 +15,9 @@
   --color-accent-500: #46a4f6;
   --color-accent-400: #58adf6;
 
-  /* Boder Radius */
-  --border-r-100: 2px;
-  --border-r-200: 4px;
+  /* Border Radius */
+  --border-r-small: 2px;
+  --border-r-medium: 4px;
 
   /* Font Family*/
   --font-f-dmmono: "DM Mono";
@@ -50,13 +50,7 @@
   --line-height-caption: 18px;
 
   /* Spacing */
-  --space-25: 2px;
-  --space-50: 4px;
-  --space-100: 8px;
-  --space-150: 12px;
-  --space-200: 16px;
-  --space-300: 24px;
-  --space-400: 32px;
-  --space-500: 48px;
-  --space-600: 64px;
+  --space-small: 8px;
+  --space-medium: 16px;
+  --space-large: 32px;
 }

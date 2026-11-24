@@ -1,6 +1,6 @@
 .scroll-top {
   border-bottom: 1px solid var(--color-neutral-700);
-  margin-bottom: var(--space-400);
+  margin-bottom: var(--space-large);
   text-align: right;
 
   a {
