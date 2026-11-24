@@ -1,0 +1,4 @@
+h4 {
+  line-height: var(--line-height-h4);
+  font-size: var(--font-s-h4);
+}

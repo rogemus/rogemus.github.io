@@ -1,0 +1,6 @@
+@import "../base/_vars.css";
+@import "../base/_h4.css";
+
+.wrapper {
+  max-width: 800px;
+}
