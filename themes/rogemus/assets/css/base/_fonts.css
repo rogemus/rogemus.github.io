@@ -1,7 +1,0 @@
-@font-face {
-  font-family: "DM Mono";
-  src:
-    local("DM Mono"),
-    url("/fonts/DMMono-Regular.woff2") format("woff2");
-  font-display: swap;
-}

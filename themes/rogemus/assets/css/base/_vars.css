@@ -20,11 +20,7 @@
   --border-r-medium: 4px;
 
   /* Font Family*/
-  --font-f-dmmono: "DM Mono";
-  --font-f-helvetica: "Helvetica";
-  --font-f-mono-mac: "Monaco";
-  --font-f-mono-win: "Andale Mono";
-  --font-f-mono-win-2: "Consolas";
+  --font-f-mono: "Fira Code", Monaco, Consolas, "Ubuntu Mono", monospace;
 
   /* Font Weight */
   --font-w-bold: 700;
