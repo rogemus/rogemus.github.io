@@ -56,10 +56,11 @@ small {
 }
 
 article footer,
+main footer,
 section footer {
   display: flex;
   justify-content: space-between;
-  margin-bottom: var(--space-medium);
+  margin: var(--space-small) 0;
 
   a {
     font-size: var(--font-s-caption);
