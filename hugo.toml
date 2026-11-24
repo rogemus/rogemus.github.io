@@ -3,6 +3,10 @@ locale = 'en-us'
 title = 'Kacper Rogowski'
 theme = 'rogemus'
 
+[minify.tdewolff.html]
+keepWhitespace = false
+keepComments = false
+
 [markup]
 [markup.highlight]
 lineNos = true
