@@ -41,6 +41,10 @@ lint:
 typecheck:
   npm run typecheck
 
+# Run lint, then typecheck; use before committing
+[group: 'quality']
+check: lint typecheck
+
 # Show Hugo version
 [group: 'quality']
 version:
