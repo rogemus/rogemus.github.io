@@ -1,0 +1,141 @@
+name: Size report
+description: >
+  Compare the size of the built site against the previous baseline and publish the difference
+  as a job summary. Hugo does not report output sizes, so they are measured from the output
+  directory. The baseline is the file size list stored by the latest run that saved one.
+  Run after the site was built.
+
+inputs:
+  path:
+    description: Directory with the built site
+    required: false
+    default: public
+  save-baseline:
+    description: Store this run's sizes as the baseline for later runs ("true" or "false")
+    required: false
+    default: "false"
+
+runs:
+  using: composite
+  steps:
+    - name: Restore previous sizes
+      uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6
+      with:
+        path: ${{ runner.temp }}/site-size/cache
+        key: site-size-none
+        restore-keys: site-size-
+
+    - name: Compare sizes
+      shell: bash
+      env:
+        SITE_DIR: ${{ inputs.path }}
+        WORK_DIR: ${{ runner.temp }}/site-size
+      run: |
+        set -euo pipefail
+
+        mkdir -p "${WORK_DIR}/cache"
+        previous="${WORK_DIR}/previous.tsv"
+        current="${WORK_DIR}/cache/sizes.tsv"
+        merged="${WORK_DIR}/merged.tsv"
+
+        # Keep the restored baseline aside, then overwrite the cache file with the current sizes.
+        if [ -f "${current}" ]; then
+          cp "${current}" "${previous}"
+          has_previous=1
+        else
+          : > "${previous}"
+          has_previous=0
+        fi
+        find "${SITE_DIR}" -type f -printf '%P\t%s\n' | LC_ALL=C sort > "${current}"
+
+        # path, previous exists, previous size, current exists, current size
+        awk -F'\t' '
+          NR == FNR { p[$1] = $2; next }
+          { c[$1] = $2 }
+          END {
+            for (k in p) all[k] = 1
+            for (k in c) all[k] = 1
+            for (k in all) printf "%s\t%d\t%d\t%d\t%d\n", k, (k in p), p[k] + 0, (k in c), c[k] + 0
+          }
+        ' "${previous}" "${current}" | LC_ALL=C sort > "${merged}"
+
+        fmt='
+          function human(b,   a, u, i) {
+            a = (b < 0) ? -b : b
+            split("B KB MB GB", u, " ")
+            i = 1
+            while (a >= 1024 && i < 4) { a /= 1024; i++ }
+            return (i == 1) ? sprintf("%d %s", a, u[i]) : sprintf("%.2f %s", a, u[i])
+          }
+          function signed(b) { return (b > 0 ? "+" : (b < 0 ? "-" : "")) human(b) }
+          function pct(p, c) { return (p > 0) ? sprintf(" (%+.1f%%)", (c - p) * 100 / p) : "" }
+        '
+
+        {
+          echo "## Site size"
+          echo
+
+          if [ "${has_previous}" = "1" ]; then
+            awk -F'\t' "${fmt}"'
+              { pt += $3; ct += $5; if ($2 && !$4) rm++; if (!$2 && $4) add++; if ($2 && $4 && $3 != $5) ch++ }
+              END {
+                printf "| | Size |\n| --- | ---: |\n"
+                printf "| Previous | %s |\n| Current | %s |\n", human(pt), human(ct)
+                printf "| **Difference** | **%s%s** |\n\n", signed(ct - pt), pct(pt, ct)
+                printf "%d added, %d removed, %d changed files.\n", add, rm, ch
+              }
+            ' "${merged}"
+
+            echo
+            echo "### By file type"
+            echo
+            echo "| Type | Files | Previous | Current | Difference |"
+            echo "| --- | ---: | ---: | ---: | ---: |"
+            awk -F'\t' '
+              {
+                n = split($1, a, ".")
+                e = ($1 ~ /\./) ? a[n] : "(none)"
+                pt[e] += $3; ct[e] += $5; cnt[e] += $4
+              }
+              END { for (e in pt) printf "%s\t%d\t%d\t%d\n", e, cnt[e], pt[e], ct[e] }
+            ' "${merged}" | LC_ALL=C sort | awk -F'\t' "${fmt}"'
+              { printf "| %s | %d | %s | %s | %s%s |\n", $1, $2, human($3), human($4), signed($4 - $3), pct($3, $4) }
+            '
+
+            echo
+            echo "### Largest changes"
+            echo
+            changes="$(
+              awk -F'\t' '
+                $3 != $5 || $2 != $4 {
+                  d = $5 - $3
+                  status = (!$2) ? "added" : ((!$4) ? "removed" : "changed")
+                  printf "%d\t%d\t%s\t%s\t%d\t%d\n", (d < 0 ? -d : d), d, $1, status, $3, $5
+                }
+              ' "${merged}" | LC_ALL=C sort -t$'\t' -k1,1nr | head -n 20
+            )"
+            if [ -z "${changes}" ]; then
+              echo "No files changed."
+            else
+              echo "| File | Status | Previous | Current | Difference |"
+              echo "| --- | --- | ---: | ---: | ---: |"
+              printf '%s\n' "${changes}" | awk -F'\t' "${fmt}"'
+                { printf "| `%s` | %s | %s | %s | %s |\n", $3, $4, human($5), human($6), signed($2) }
+              '
+            fi
+          else
+            echo "No previous baseline found, showing current sizes only."
+            echo
+            awk -F'\t' "${fmt}"'
+              { ct += $5; n++ }
+              END { printf "| | |\n| --- | ---: |\n| Files | %d |\n| Total size | %s |\n", n, human(ct) }
+            ' "${merged}"
+          fi
+        } >> "${GITHUB_STEP_SUMMARY}"
+
+    - name: Save sizes as baseline
+      if: inputs.save-baseline == 'true'
+      uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6
+      with:
+        path: ${{ runner.temp }}/site-size/cache
+        key: site-size-${{ github.run_id }}-${{ github.run_attempt }}

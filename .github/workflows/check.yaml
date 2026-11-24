@@ -26,3 +26,7 @@ jobs:
         uses: ./.github/actions/setup
       - name: Verify
         uses: ./.github/actions/verify
+      - name: Size report
+        uses: ./.github/actions/size-report
+        with:
+          save-baseline: "true"
