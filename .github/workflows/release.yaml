@@ -1,12 +1,10 @@
-
-# Sample workflow for building and deploying a Hugo site to GitHub Pages
-name: Deploy Hugo site to Pages
+name: Release
 
 on:
-  # Runs on pushes targeting the default branch
+  # Runs when a version tag like v1.2.3 is pushed
   push:
-    branches:
-      - main
+    tags:
+      - "v[0-9]*"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -23,36 +21,34 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
-# Default to bash
-defaults:
-  run:
-    shell: bash
-
 jobs:
-  # Build job
-  build:
+  test:
     runs-on: ubuntu-latest
-    env:
-      HUGO_VERSION: 0.170.1
     steps:
-      - name: Install Hugo CLI
-        run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb          
-      - name: Install Dart Sass
-        run: sudo snap install dart-sass
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           submodules: recursive
           fetch-depth: 0
+      - name: Setup
+        uses: ./.github/actions/setup
+      - name: Verify
+        uses: ./.github/actions/verify
+
+  build:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      - name: Setup
+        uses: ./.github/actions/setup
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v4
-      - name: Install Node.js dependencies
-        env:
-          HUSKY: 0
-        run: npm ci
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
@@ -62,13 +58,12 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"          
+            --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5
         with:
           path: ./public
 
-  # Deployment job
   deploy:
     environment:
       name: github-pages
@@ -78,4 +73,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5

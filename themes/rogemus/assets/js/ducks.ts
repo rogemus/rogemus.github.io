@@ -1,4 +1,5 @@
 import { Duck } from "./Duck";
+import { isOffScreen } from "./utils";
 
 const config = {
   fallingTickDistance: 5,
@@ -34,7 +35,7 @@ const animateDucks = (deltaTime: number): void => {
   for (let i = 0; i < ducks.length; i++) {
     ducks[i].animate(config.fallingTickDistance * speed, ctx);
 
-    if (ducks[i].isOffScreen(canvasHeight)) {
+    if (isOffScreen(ducks[i].y, canvasHeight)) {
       delete ducks[i];
       ducks.splice(i, 1);
     }

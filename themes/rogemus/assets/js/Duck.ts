@@ -26,10 +26,6 @@ export class Duck {
     this.speedScale = getRandomFloatInRange(1.2, 3);
   }
 
-  isOffScreen(windowHeight: number): boolean {
-    return this.y > windowHeight;
-  }
-
   animate(fallingOffset: number, ctx: CanvasRenderingContext2D): void {
     const xCenter = this.x + this.sizeX / 2;
     const yCenter = this.y + this.sizeY / 2;

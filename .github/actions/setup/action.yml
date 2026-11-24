@@ -1,0 +1,32 @@
+name: Setup
+description: Install Hugo, Dart Sass, Node.js and npm dependencies. Run actions/checkout first.
+
+inputs:
+  hugo-version:
+    description: Hugo extended version to install
+    required: false
+    default: "0.170.1"
+
+runs:
+  using: composite
+  steps:
+    - name: Install Hugo CLI
+      shell: bash
+      env:
+        HUGO_VERSION: ${{ inputs.hugo-version }}
+      run: |
+        wget -O "${RUNNER_TEMP}/hugo.deb" "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb" \
+        && sudo dpkg -i "${RUNNER_TEMP}/hugo.deb"
+    - name: Install Dart Sass
+      shell: bash
+      run: sudo snap install dart-sass
+    - name: Setup Node.js
+      uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
+      with:
+        node-version-file: .node-version
+        cache: npm
+    - name: Install Node.js dependencies
+      shell: bash
+      env:
+        HUSKY: 0
+      run: npm ci

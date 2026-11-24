@@ -1,0 +1,24 @@
+name: Verify
+description: Check formatting, lint, types, tests and that the site builds. Run the setup action first.
+
+runs:
+  using: composite
+  steps:
+    - name: Check formatting
+      shell: bash
+      run: npm run fmt:check
+    - name: Lint
+      shell: bash
+      run: npm run lint
+    - name: Type-check
+      shell: bash
+      run: npm run typecheck
+    - name: Test
+      shell: bash
+      run: npm run test
+    - name: Build site
+      shell: bash
+      env:
+        HUGO_ENVIRONMENT: production
+        HUGO_ENV: production
+      run: hugo --gc --minify
