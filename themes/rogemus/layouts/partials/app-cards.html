@@ -8,11 +8,11 @@
       <p>{{ .Description }}</p>
       <footer>
         {{ with .Params.github }}
-        <a data-umami-event="App link" data-umami-event-link="{{ $app.Title }}" href="{{ . }}" class="accent">
+        <a data-umami-event="App link" data-umami-event-link="{{ $app.Title }}" href="{{ . }}" class="accent" aria-label="{{ $app.Title }} on GitHub">
           GitHub
         </a>
         {{ end }}
-        <a data-umami-event="App more link" data-umami-event-link="{{ $app.Title }}" href="{{ .RelPermalink }}" class="accent">
+        <a data-umami-event="App more link" data-umami-event-link="{{ $app.Title }}" href="{{ .RelPermalink }}" class="accent" aria-label="Read more about {{ $app.Title }}">
           Read more
         </a>
       </footer>

@@ -34,6 +34,10 @@ export default {
     "preset-default",
     "removeXMLNS",
     { name: "removeAttrs", params: { attrs: "class" } },
+    {
+      name: "addAttributesToSVGElement",
+      params: { attributes: [{ "aria-hidden": "true" }, { focusable: "false" }] },
+    },
     strokeWidth,
     removeBoundingPath,
   ],

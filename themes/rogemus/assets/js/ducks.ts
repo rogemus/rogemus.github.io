@@ -68,7 +68,9 @@ const ducksAnimation = (): void => {
 };
 
 window.addEventListener("load", () => {
-  if (window.innerWidth >= 500) {
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (window.innerWidth >= 500 && !prefersReducedMotion) {
     ducksAnimation();
   }
 });

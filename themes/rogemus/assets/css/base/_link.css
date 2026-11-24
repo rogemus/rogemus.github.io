@@ -1,10 +1,21 @@
 a {
   color: var(--color-neutral-100);
-  transition: all 200ms;
   text-decoration: none;
   cursor: pointer;
 
+  @media (prefers-reduced-motion: no-preference) {
+    transition: all 200ms;
+  }
+
   &:hover {
+    color: var(--color-accent-500);
+    text-decoration: underline;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-accent-500);
+    outline-offset: 2px;
+    border-radius: var(--border-r-small);
     color: var(--color-accent-500);
     text-decoration: underline;
   }
@@ -15,5 +26,19 @@ a {
     &:hover {
       color: var(--color-accent-600);
     }
+  }
+}
+
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: var(--space-small) var(--space-medium);
+  background: var(--color-neutral-800);
+  transform: translateY(-100%);
+
+  &:focus {
+    transform: translateY(0);
   }
 }

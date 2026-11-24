@@ -14,7 +14,10 @@
   padding: var(--space-medium);
   border: 1px solid var(--color-neutral-700);
   border-radius: var(--border-r-medium);
-  transition: all 200ms;
+
+  @media (prefers-reduced-motion: no-preference) {
+    transition: all 200ms;
+  }
 
   &:hover {
     background: var(--color-neutral-700);

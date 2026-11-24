@@ -7,16 +7,17 @@
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <div class="wrapper">
     <header>
       <div class="logo">
         <a href="/">
-          <img id="duck" src="/duck.png" alt="yellow rubber duck" height="65" width="80">
+          <img id="duck" src="/duck.png" alt="Home" height="65" width="80">
         </a>
       </div>
       {{ block "header" . }} {{ end }}
     </header>
-    <main>
+    <main id="main">
       {{ block "main" . }} {{ end }}
     </main>
     <footer>
@@ -24,7 +25,7 @@
     </footer>
   </div>
 
-  <canvas id="ducks"></canvas>
+  <canvas id="ducks" aria-hidden="true"></canvas>
 
   {{ $opts := dict "minify" true }}
   {{ with resources.Get "js/ducks.ts" | js.Build $opts }}
