@@ -2,18 +2,18 @@
   display: flex;
   flex-direction: column;
 
-  >span {
+  > span {
     line-height: var(--font-s-caption);
   }
 
-  >span:first-of-type {
+  > span:first-of-type {
     font-family: var(--font-f-helvetica);
     font-size: var(--font-s-caption);
     font-weight: var(--font-w-semibold);
     margin-bottom: var(--space-100);
   }
 
-  >span:last-of-type {
+  > span:last-of-type {
     font-size: var(--font-s-xs-caption);
   }
 }

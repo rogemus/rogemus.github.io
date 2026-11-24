@@ -1,8 +1,8 @@
 html,
 body {
   font-family:
-    var(--font-f-mono-mac), var(--font-f-mono-win), var(--font-f-mono-win-2),
-    var(--font-f-dmmono), monospace;
+    var(--font-f-mono-mac), var(--font-f-mono-win), var(--font-f-mono-win-2), var(--font-f-dmmono),
+    monospace;
   color: var(--color-neutral-500);
   font-size: var(--font-s-caption);
 

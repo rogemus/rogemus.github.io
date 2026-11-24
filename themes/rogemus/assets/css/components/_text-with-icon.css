@@ -2,7 +2,7 @@
   align-items: center;
   display: flex;
 
-  >span {
+  > span {
     margin-right: var(--space-200);
     display: flex;
   }

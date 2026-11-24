@@ -1,7 +1,7 @@
 _default:
   just --list
 
-# Install npm dependencies (postcss, cssnano)
+# Install dependencies
 [group: 'setup']
 setup:
   npm install
@@ -25,6 +25,21 @@ build:
 [group: 'build']
 clean:
   rm -rf public resources
+
+# Format css, md, ts with oxfmt
+[group: 'quality']
+fmt:
+  npm run fmt
+
+# Lint with oxlint
+[group: 'quality']
+lint:
+  npm run lint
+
+# Type-check with tsc
+[group: 'quality']
+typecheck:
+  npm run typecheck
 
 # Show Hugo version
 [group: 'quality']
