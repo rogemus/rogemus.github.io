@@ -5,6 +5,10 @@ on:
   push:
     branches:
       - main
+  # Runs on pull requests (including Dependabot) targeting the default branch
+  pull_request:
+    branches:
+      - main
 
 permissions:
   contents: read
@@ -29,4 +33,4 @@ jobs:
       - name: Size report
         uses: ./.github/actions/size-report
         with:
-          save-baseline: "true"
+          save-baseline: ${{ github.event_name == 'push' && 'true' || 'false' }}
